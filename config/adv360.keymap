@@ -119,6 +119,11 @@
 #define MY_KC_17_H LG(LA(LC(LS(LOCKING_NUM))))
 #define MY_KC_18_H LG(LA(LC(LS(KP_ENTER))))
 
+// https://github.com/zmkfirmware/zmk/pull/1811
+&mt {
+    hold-while-undecided;
+};
+
 / {
 combos {
       compatible = "zmk,combos";
