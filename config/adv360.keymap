@@ -76,7 +76,7 @@
 #define MY_KC_14 KP_SLASH
 #define MY_KC_15 KP_ASTERISK
 #define MY_KC_16 NON_US_BACKSLASH
-#define MY_KC_17 LOCKING_NUM
+#define MY_KC_17 INSERT
 #define MY_KC_18 KP_ENTER
 
 // OSに渡す用ショートカット (meta
@@ -96,7 +96,7 @@
 #define MY_KC_14_M LA(LC(LS(KP_SLASH)))
 #define MY_KC_15_M LA(LC(LS(KP_ASTERISK)))
 #define MY_KC_16_M LA(LC(LS(NON_US_BACKSLASH)))
-#define MY_KC_17_M LA(LC(LS(LOCKING_NUM)))
+#define MY_KC_17_M LA(LC(LS(INSERT)))
 #define MY_KC_18_M LA(LC(LS(KP_ENTER)))
 
 // OSに渡す用ショートカット hyper
@@ -116,7 +116,7 @@
 #define MY_KC_14_H LG(LA(LC(LS(KP_SLASH))))
 #define MY_KC_15_H LG(LA(LC(LS(KP_ASTERISK))))
 #define MY_KC_16_H LG(LA(LC(LS(NON_US_BACKSLASH))))
-#define MY_KC_17_H LG(LA(LC(LS(LOCKING_NUM))))
+#define MY_KC_17_H LG(LA(LC(LS(INSERT))))
 #define MY_KC_18_H LG(LA(LC(LS(KP_ENTER))))
 
 // https://github.com/zmkfirmware/zmk/pull/1811
