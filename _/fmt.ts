@@ -1,9 +1,9 @@
-// deno run _tool/fmt.ts | pbcopy
+// deno run _/fmt.ts | pbcopy
 
 const bindings = `
 `
 
-const blockWidth = 15
+const blockWidth = 25
 const pad = 3
 
 const [l1, l2, l3, l4, l5] = bindings.split(/\n/)
