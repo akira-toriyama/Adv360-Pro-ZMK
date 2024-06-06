@@ -1,11 +1,8 @@
-// 続き --- 
-
 // リファクタ
 // _/ の 不要ファイルの削除
 
 // keymap 画像
 // https://github.com/caksoylar/keymap-drawer?tab=readme-ov-file
-
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -27,8 +24,7 @@
 #define RIGHT_ARROW_LAYER 8
 #define UP_ARROW_LAYER 9
 #define DOWN_ARROW_LAYER 10
-#define MOUSE_SUPPORT_LAYER 11
-#define MOUSE_LAYER 12
+#define MOUSE_LAYER 11
 // ------------------------------------
 
 // エイリアス
@@ -42,12 +38,11 @@
 #define T_LR LEFT_COMMAND BACKSPACE
 #define T_RL LEFT_ALT ESC
 #define T_RR LEFT_CONTROL SPACE
-#define T_LX MOUSE_SUPPORT_LAYER
 
 // 左手
-#define LH_SYM1 SYMBOL1_LAYER
-#define LH_SYM2 SYMBOL2_LAYER
 #define LH_NUM NUM_LAYER
+#define LH_SYM1 SYMBOL1_LAYER
+#define LH_SYM2 SYMBOL2_LAYER 
 
 // マウス関連
 // zmk に機能追加されるまで、karabiner で代用
@@ -1480,10 +1475,10 @@
     DEFAULT_LAYER {
       bindings = <
         &none                     &none                     &none                     &none                     &none                     &bt BT_CLR                &bootloader                                                                                                                                                                                                &bootloader               &bt BT_CLR                &none                     &none                     &none                     &none                     &none
-        &none                     &_q                       &_w                       &_e                       &_r                       &_t                       &none                                                                                                                                                                                                &none                     &_y                       &_u                       &_i                       &_o                       &_p                       &none
-        &kp SPACE                 &_a                       &_s                       &_d                       &_f                       &_g                       &none                             &none                     &none                     &none                     &none                     &none                     &_h                                    &_j                       &_k                       &_l                       &mouse                    &kp BACKSPACE
+        &none                     &_q                       &_w                       &_e                       &_r                       &_t                       &kp LEFT_CONTROL                                                                                                                                                                                                &none                     &_y                       &_u                       &_i                       &_o                       &_p                       &none
+        &kp SPACE                 &_a                       &_s                       &_d                       &_f                       &_g                       &kp LEFT_ALT                      &none                     &none                     &none                     &none                     &none                     &_h                                    &_j                       &_k                       &_l                       &mouse                    &kp BACKSPACE
         &kp ESCAPE                &_z                       &_x                       &_c                       &_v                       &_b                               &none                     &none                     &_n                       &_m                       &_up_up_up                &_tab_tab_tab             &_delete_delete_delete    &kp RETURN                             
-        &none                     &none                     &mo LH_SYM2               &mo LH_SYM1               &mo LH_NUM                                                                            &mt T_LL                  &mt T_LR                  &mo T_LX                  &none                     &mt T_RL                  &mt T_RR                                                                                   &_left_left_left          &_down_down_down          &_right_right_right       &none                     &none
+        &none                     &none                     &mo LH_SYM2               &mo LH_SYM1               &mo LH_NUM                                                                            &mt T_LL                  &mt T_LR                  &none                  &none                     &mt T_RL                  &mt T_RR                                                                                   &_left_left_left          &_down_down_down          &_right_right_right       &none                     &none
       >;
     };
 
@@ -1584,16 +1579,6 @@
         &none    &kp X_DOWN_ARROW_A    &kp X_DOWN_ARROW_S     &kp X_DOWN_ARROW_D    &kp X_DOWN_ARROW_F    &kp X_DOWN_ARROW_G           &none                   &none       &none        &none        &none       &none           &none                  &none         &none         &none         &none        &none
         &none    &kp X_DOWN_ARROW_Z    &kp X_DOWN_ARROW_X     &kp X_DOWN_ARROW_C    &kp X_DOWN_ARROW_V    &kp X_DOWN_ARROW_B                   &none        &none       &none         &none         &none         &none         &none        &none              
         &none          &none       &none      &none      &none                                               &kp X_DOWN_ARROW_T_LL          &kp X_DOWN_ARROW_T_LR          &none       &none           &kp X_DOWN_ARROW_T_RL          &kp X_DOWN_ARROW_T_RR                                                        &none    &none      &none        &none        &none
-      >;
-    };
-
-    MOUSE_SUPPORT_LAYER {
-      bindings = <
-        &none     &none  &none  &none          &none          &none          &none                                                                                                                         &none           &none          &none          &none          &none          &none          &none
-        &none    &none     &none     &none     &none     &none           &none                                                                                                                         &none           &none           &none         &none         &none         &none           &none
-        &none    &kp LEFT_ALT     &kp SPACE     &kp DELETE     &none     &none           &none                   &none       &none        &none        &none       &none           &none                  &none         &none         &none         &none        &none
-        &none    &none    &none    &kp LEFT_CONTROL    &none    &kp BACKSPACE                   &none        &none       &none         &none         &none         &none         &none        &none              
-        &none          &none       &none      &none      &none                                               &none          &none          &none       &none           &none          &none                                                        &none    &none      &none        &none        &none
       >;
     };
 
