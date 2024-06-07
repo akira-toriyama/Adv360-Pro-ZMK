@@ -237,13 +237,11 @@
 
       combo_kana {
           key-positions = <KEY_POSITION_LL KEY_POSITION_LR>;
-          // 引数の渡し方が不明
           bindings = <&_w_oll_olr LS(LEFT_COMMAND) &_kana>;
       };
 
       combo_eiji {
           key-positions = <KEY_POSITION_RL KEY_POSITION_RR>;
-          // 引数の渡し方が不明
           bindings = <&_w_orl_orr LC(LALT) &_eiji>;
       };
   };
