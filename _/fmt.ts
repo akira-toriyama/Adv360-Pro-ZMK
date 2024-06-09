@@ -1,9 +1,4 @@
 const bindings = `
-&none     &none  &none  &none          &none          &none          &none                                                                                                                         &none           &none          &none          &none          &none          &none          &none
-&none &none &none &none &none &none           &none                                                                                                                         &none           &none           &eiji_macro N7         &eiji_macro N8         &eiji_macro N9         &none           &none
-&none &none &none &none &none &none           &none                   &none       &none        &none        &none       &none           &none                  &eiji_macro N4         &eiji_macro N5         &eiji_macro N6         &none        &none
-&none &none &none &none &none &none                   &none        &none       &eiji_macro N0         &eiji_macro N1         &eiji_macro N2         &eiji_macro N3         &none        &none              
-&none  &none &mo LH_SYM2 &mo LH_SYM1 &mo LH_NUM     &mt T_LL &mt T_LR  &none       &none           &mt T_RL &mt T_RR &none &none &none &none &none
 `
 
 const blockWidth = 25
