@@ -1,7 +1,4 @@
-// deno run _/fmt.ts | pbcopy
-
-const bindings = `
-`
+const bindings = ``
 
 const blockWidth = 25
 const pad = 3
@@ -51,4 +48,5 @@ ${l2L}${l2Pad}${l2R}
 ${l3L}${l3LPad}${l3M}${l3RPad}${l3R}
 ${l4L}${l4LPad}${l4M}${l4RPad}${l4R}
 ${l5L}${l5LPad}${l5M}${l5RPad}${l5R}`);
+
 
