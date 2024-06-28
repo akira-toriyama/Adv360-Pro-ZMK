@@ -488,6 +488,6 @@ layers:
   - ''
 combos:
 - p: [65, 66]
-  k: {t: LANGUAGE 1, h: Sft+ LEFT COMMAND}
+  k: {t: '&ime_kana_macro LANGUAGE_1', h: Sft+ LEFT COMMAND}
 - p: [69, 70]
-  k: {t: LANGUAGE 2, h: Ctl+ LALT}
+  k: {t: '&ime_eiji_macro LANGUAGE_2', h: Ctl+ LALT}
