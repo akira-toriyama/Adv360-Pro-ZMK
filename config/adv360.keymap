@@ -26,6 +26,9 @@
 // 和英
 #define EIJI LANGUAGE_2
 #define KANA LANGUAGE_1
+// 効果音容
+#define X_KANA LANGUAGE_3
+#define X_EIJI LANGUAGE_4
 
 // 親指
 #define T_LL LEFT_SHIFT RETURN
@@ -231,12 +234,12 @@
 
       combo_kana {
           key-positions = <KEY_POSITION_LL KEY_POSITION_LR>;
-          bindings = <&ime LS(LEFT_COMMAND) KANA>;
+          bindings = <&ime_kana LS(LEFT_COMMAND) KANA>;
       };
 
       combo_eiji {
           key-positions = <KEY_POSITION_RL KEY_POSITION_RR>;
-          bindings = <&ime LC(LALT) EIJI>;
+          bindings = <&ime_eiji LC(LALT) EIJI>;
       };
   };
 
@@ -255,6 +258,27 @@
               ;
     };
 
+    // ime切り替え時に効果音を鳴らす
+    ime_kana_macro: ime_kana_macro {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+            = <&macro_tap &kp KANA>
+            , <&macro_tap &kp X_KANA>
+            ;
+    };
+
+
+    // ime切り替え時に効果音を鳴らす
+    ime_eiji_macro: ime_eiji_macro {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+            = <&macro_tap &kp EIJI>
+            , <&macro_tap &kp X_EIJI>
+            ;
+    };
+
     // マウスのカーソルをジャンプして マウスレイヤーに切り替え
     // jmp: mouse_pointer_jump {
     //     #binding-cells = <1>;
@@ -267,6 +291,22 @@
   };
 
   behaviors {
+    ime_kana: ime_kana {
+        compatible = "zmk,behavior-hold-tap";
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+        flavor = "hold-preferred";
+        bindings = <&kp>, <&ime_kana_macro>;
+    };
+
+    ime_eiji: ime_eiji {
+        compatible = "zmk,behavior-hold-tap";
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+        flavor = "hold-preferred";
+        bindings = <&kp>, <&ime_eiji_macro>;
+    };
+
     // comboから呼ばれる
     ime: ime {
         compatible = "zmk,behavior-hold-tap";
