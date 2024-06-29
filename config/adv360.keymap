@@ -542,14 +542,6 @@
     };
 
     _up: _up {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&__up>, <&kp UP_ARROW>;
-        mods = <(MOD_RGUI)>;
-        keep-mods = <(MOD_RGUI)>;
-    };
-
-    __up: __up {
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
         wait-ms = <0>;
@@ -578,11 +570,13 @@
     };
 
     _left: _left {
-        compatible = "zmk,behavior-mod-morph";
+        compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        bindings = <&___left>, <&kp LEFT_ARROW>;
-        mods = <(MOD_RGUI)>;
-        keep-mods = <(MOD_RGUI)>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press &____left LEFT_ARROW_LAYER &__left>
+            , <&macro_pause_for_release>
+            , <&macro_release &____left LEFT_ARROW_LAYER &__left>;
     };
 
     __left: __left {
@@ -595,15 +589,6 @@
             , <&macro_release &mo LEFT_ARROW_LAYER &kp LEFT_ARROW>;
     };
 
-    ___left: ___left {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press &____left LEFT_ARROW_LAYER &__left>
-            , <&macro_pause_for_release>
-            , <&macro_release &____left LEFT_ARROW_LAYER &__left>;
-    };
     ____left: ____left {
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
@@ -614,11 +599,13 @@
     };
 
     _right: _right {
-        compatible = "zmk,behavior-mod-morph";
+        compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        bindings = <&___right>, <&kp RIGHT_ARROW>;
-        mods = <(MOD_RGUI)>;
-        keep-mods = <(MOD_RGUI)>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press &____right RIGHT_ARROW_LAYER &__right>
+            , <&macro_pause_for_release>
+            , <&macro_release &____right RIGHT_ARROW_LAYER &__right>;
     };
 
     __right: __right {
@@ -631,16 +618,6 @@
             , <&macro_release &mo RIGHT_ARROW_LAYER &kp RIGHT_ARROW>;
     };
 
-    ___right: ___right {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press &____right RIGHT_ARROW_LAYER &__right>
-            , <&macro_pause_for_release>
-            , <&macro_release &____right RIGHT_ARROW_LAYER &__right>;
-    };
-
     ____right: ____right {
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
@@ -651,11 +628,13 @@
     };
 
     _down: _down {
-        compatible = "zmk,behavior-mod-morph";
+        compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        bindings = <&___down>, <&kp DOWN_ARROW>;
-        mods = <(MOD_RGUI)>;
-        keep-mods = <(MOD_RGUI)>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press &____down DOWN_ARROW_LAYER &__down>
+            , <&macro_pause_for_release>
+            , <&macro_release &____down DOWN_ARROW_LAYER &__down>;
     };
 
     __down: __down {
@@ -666,16 +645,6 @@
             = <&macro_press &mo DOWN_ARROW_LAYER &kp DOWN_ARROW>
             , <&macro_pause_for_release>
             , <&macro_release &mo DOWN_ARROW_LAYER &kp DOWN_ARROW>;
-    };
-
-    ___down: ___down {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press &____down DOWN_ARROW_LAYER &__down>
-            , <&macro_pause_for_release>
-            , <&macro_release &____down DOWN_ARROW_LAYER &__down>;
     };
 
     ____down: ____down {
