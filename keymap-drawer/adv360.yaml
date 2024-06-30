@@ -385,30 +385,468 @@ layers:
   - ''
   - ''
   - ''
-  '5': ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', Sft+AGr+ F13, Sft+AGr+ F14, Sft+AGr+ F15, Sft+AGr+ F16, Sft+AGr+ F17, '', '', '', '', '', '',
-    '', '', '', Sft+AGr+ F18, Sft+AGr+ F19, Sft+AGr+ F20, Sft+AGr+ F21, Sft+AGr+ F22, '', '', '', '', '', '', '', '', '', '', '', '', '', Sft+AGr+ F23, Sft+AGr+ F24,
-    'Sft+AGr+ #', Sft+AGr+ PRINTSCREEN, Sft+AGr+ PAUSE BREAK, '', '', '', '', '', '', '', '', '', '', '', '', '', Sft+AGr+ INSERT, Sft+AGr+ KP ENTER, '', '', Sft+AGr+
-      \, Sft+AGr+ APPLICATION, '', '', '', '', '']
-  '6': ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', Sft+Gui+ F13, Sft+Gui+ F14, Sft+Gui+ F15, Sft+Gui+ F16, Sft+Gui+ F17, '', '', '', '', '', '',
-    '', '', '', Sft+Gui+ F18, Sft+Gui+ F19, Sft+Gui+ F20, Sft+Gui+ F21, Sft+Gui+ F22, '', '', '', '', '', '', '', '', '', '', '', '', '', Sft+Gui+ F23, Sft+Gui+ F24,
-    'Sft+Gui+ #', Sft+Gui+ PRINTSCREEN, Sft+Gui+ PAUSE BREAK, '', '', '', '', '', '', '', '', '', '', '', '', '', Sft+Gui+ INSERT, Sft+Gui+ KP ENTER, '', '', Sft+Gui+
-      \, Sft+Gui+ APPLICATION, '', '', '', '', '']
-  '7': ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', AGr+Ctl+ F13, AGr+Ctl+ F14, AGr+Ctl+ F15, AGr+Ctl+ F16, AGr+Ctl+ F17, '', '', '', '', '', '',
-    '', '', '', AGr+Ctl+ F18, AGr+Ctl+ F19, AGr+Ctl+ F20, AGr+Ctl+ F21, AGr+Ctl+ F22, '', '', '', '', '', '', '', '', '', '', '', '', '', AGr+Ctl+ F23, AGr+Ctl+ F24,
-    'AGr+Ctl+ #', AGr+Ctl+ PRINTSCREEN, AGr+Ctl+ PAUSE BREAK, '', '', '', '', '', '', '', '', '', '', '', '', '', AGr+Ctl+ INSERT, AGr+Ctl+ KP ENTER, '', '', AGr+Ctl+
-      \, AGr+Ctl+ APPLICATION, '', HOME, '', '', '']
-  '8': ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', Gui+Ctl+ F13, Gui+Ctl+ F14, Gui+Ctl+ F15, Gui+Ctl+ F16, Gui+Ctl+ F17, '', '', '', '', '', '',
-    '', '', '', Gui+Ctl+ F18, Gui+Ctl+ F19, Gui+Ctl+ F20, Gui+Ctl+ F21, Gui+Ctl+ F22, '', '', '', '', '', '', '', '', '', '', '', '', '', Gui+Ctl+ F23, Gui+Ctl+ F24,
-    'Gui+Ctl+ #', Gui+Ctl+ PRINTSCREEN, Gui+Ctl+ PAUSE BREAK, '', '', '', '', '', '', '', '', '', '', '', '', '', Gui+Ctl+ INSERT, Gui+Ctl+ KP ENTER, '', '', Gui+Ctl+
-      \, Gui+Ctl+ APPLICATION, '', END, '', '', '']
-  '9': ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', Sft+Ctl+ F13, Sft+Ctl+ F14, Sft+Ctl+ F15, Sft+Ctl+ F16, Sft+Ctl+ F17, '', '', '', '', '', '',
-    '', '', '', Sft+Ctl+ F18, Sft+Ctl+ F19, Sft+Ctl+ F20, Sft+Ctl+ F21, Sft+Ctl+ F22, '', '', '', '', '', '', '', '', '', '', '', '', '', Sft+Ctl+ F23, Sft+Ctl+ F24,
-    'Sft+Ctl+ #', Sft+Ctl+ PRINTSCREEN, Sft+Ctl+ PAUSE BREAK, '', '', '', '', '', '', '', '', '', '', '', '', '', Sft+Ctl+ INSERT, Sft+Ctl+ KP ENTER, '', '', Sft+Ctl+
-      \, Sft+Ctl+ APPLICATION, PAGE UP, '', '', '', '']
-  '10': ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', Gui+AGr+ F13, Gui+AGr+ F14, Gui+AGr+ F15, Gui+AGr+ F16, Gui+AGr+ F17, '', '', '', '', '', '',
-    '', '', '', Gui+AGr+ F18, Gui+AGr+ F19, Gui+AGr+ F20, Gui+AGr+ F21, Gui+AGr+ F22, '', '', '', '', '', '', '', '', '', '', '', '', '', Gui+AGr+ F23, Gui+AGr+ F24,
-    'Gui+AGr+ #', Gui+AGr+ PRINTSCREEN, Gui+AGr+ PAUSE BREAK, '', '', '', '', '', '', '', '', '', '', '', '', '', Gui+AGr+ INSERT, Gui+AGr+ KP ENTER, '', '', Gui+AGr+
-      \, Gui+AGr+ APPLICATION, PAGE DOWN, '', '', '', '']
+  '5':
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Sft+AGr+ F13
+  - Sft+AGr+ F14
+  - Sft+AGr+ F15
+  - Sft+AGr+ F16
+  - Sft+AGr+ F17
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Sft+AGr+ F18
+  - Sft+AGr+ F19
+  - Sft+AGr+ F20
+  - Sft+AGr+ F21
+  - Sft+AGr+ F22
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Sft+AGr+ F23
+  - Sft+AGr+ F24
+  - 'Sft+AGr+ #'
+  - Sft+AGr+ PRINTSCREEN
+  - Sft+AGr+ PAUSE BREAK
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: Sft+AGr+ INSERT, h: LEFT SHIFT}
+  - {t: Sft+AGr+ KP ENTER, h: LEFT COMMAND}
+  - ''
+  - ''
+  - {t: Sft+AGr+ \, h: LEFT ALT}
+  - {t: Sft+AGr+ APPLICATION, h: LEFT CONTROL}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  '6':
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Sft+Gui+ F13
+  - Sft+Gui+ F14
+  - Sft+Gui+ F15
+  - Sft+Gui+ F16
+  - Sft+Gui+ F17
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Sft+Gui+ F18
+  - Sft+Gui+ F19
+  - Sft+Gui+ F20
+  - Sft+Gui+ F21
+  - Sft+Gui+ F22
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Sft+Gui+ F23
+  - Sft+Gui+ F24
+  - 'Sft+Gui+ #'
+  - Sft+Gui+ PRINTSCREEN
+  - Sft+Gui+ PAUSE BREAK
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: Sft+Gui+ INSERT, h: LEFT SHIFT}
+  - {t: Sft+Gui+ KP ENTER, h: LEFT COMMAND}
+  - ''
+  - ''
+  - {t: Sft+Gui+ \, h: LEFT ALT}
+  - {t: Sft+Gui+ APPLICATION, h: LEFT CONTROL}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  '7':
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - AGr+Ctl+ F13
+  - AGr+Ctl+ F14
+  - AGr+Ctl+ F15
+  - AGr+Ctl+ F16
+  - AGr+Ctl+ F17
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - AGr+Ctl+ F18
+  - AGr+Ctl+ F19
+  - AGr+Ctl+ F20
+  - AGr+Ctl+ F21
+  - AGr+Ctl+ F22
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - AGr+Ctl+ F23
+  - AGr+Ctl+ F24
+  - 'AGr+Ctl+ #'
+  - AGr+Ctl+ PRINTSCREEN
+  - AGr+Ctl+ PAUSE BREAK
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: AGr+Ctl+ INSERT, h: LEFT SHIFT}
+  - {t: AGr+Ctl+ KP ENTER, h: LEFT COMMAND}
+  - ''
+  - ''
+  - {t: AGr+Ctl+ \, h: LEFT ALT}
+  - {t: AGr+Ctl+ APPLICATION, h: LEFT CONTROL}
+  - ''
+  - HOME
+  - ''
+  - ''
+  - ''
+  '8':
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Gui+Ctl+ F13
+  - Gui+Ctl+ F14
+  - Gui+Ctl+ F15
+  - Gui+Ctl+ F16
+  - Gui+Ctl+ F17
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Gui+Ctl+ F18
+  - Gui+Ctl+ F19
+  - Gui+Ctl+ F20
+  - Gui+Ctl+ F21
+  - Gui+Ctl+ F22
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Gui+Ctl+ F23
+  - Gui+Ctl+ F24
+  - 'Gui+Ctl+ #'
+  - Gui+Ctl+ PRINTSCREEN
+  - Gui+Ctl+ PAUSE BREAK
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: Gui+Ctl+ INSERT, h: LEFT SHIFT}
+  - {t: Gui+Ctl+ KP ENTER, h: LEFT COMMAND}
+  - ''
+  - ''
+  - {t: Gui+Ctl+ \, h: LEFT ALT}
+  - {t: Gui+Ctl+ APPLICATION, h: LEFT CONTROL}
+  - ''
+  - END
+  - ''
+  - ''
+  - ''
+  '9':
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Sft+Ctl+ F13
+  - Sft+Ctl+ F14
+  - Sft+Ctl+ F15
+  - Sft+Ctl+ F16
+  - Sft+Ctl+ F17
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Sft+Ctl+ F18
+  - Sft+Ctl+ F19
+  - Sft+Ctl+ F20
+  - Sft+Ctl+ F21
+  - Sft+Ctl+ F22
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Sft+Ctl+ F23
+  - Sft+Ctl+ F24
+  - 'Sft+Ctl+ #'
+  - Sft+Ctl+ PRINTSCREEN
+  - Sft+Ctl+ PAUSE BREAK
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: Sft+Ctl+ INSERT, h: LEFT SHIFT}
+  - {t: Sft+Ctl+ KP ENTER, h: LEFT COMMAND}
+  - ''
+  - ''
+  - {t: Sft+Ctl+ \, h: LEFT ALT}
+  - {t: Sft+Ctl+ APPLICATION, h: LEFT CONTROL}
+  - PAGE UP
+  - ''
+  - ''
+  - ''
+  - ''
+  '10':
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Gui+AGr+ F13
+  - Gui+AGr+ F14
+  - Gui+AGr+ F15
+  - Gui+AGr+ F16
+  - Gui+AGr+ F17
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Gui+AGr+ F18
+  - Gui+AGr+ F19
+  - Gui+AGr+ F20
+  - Gui+AGr+ F21
+  - Gui+AGr+ F22
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Gui+AGr+ F23
+  - Gui+AGr+ F24
+  - 'Gui+AGr+ #'
+  - Gui+AGr+ PRINTSCREEN
+  - Gui+AGr+ PAUSE BREAK
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: Gui+AGr+ INSERT, h: LEFT SHIFT}
+  - {t: Gui+AGr+ KP ENTER, h: LEFT COMMAND}
+  - ''
+  - ''
+  - {t: Gui+AGr+ \, h: LEFT ALT}
+  - {t: Gui+AGr+ APPLICATION, h: LEFT CONTROL}
+  - PAGE DOWN
+  - ''
+  - ''
+  - ''
+  - ''
   '11':
   - ''
   - ''
