@@ -57,7 +57,7 @@ layers:
   - ''
   - {t: N, s: '&eiji_macro N'}
   - {t: M, s: '&eiji_macro M'}
-  - '&_up'
+  - '&_up_macro'
   - {t: '&___tab', s: TAB}
   - {t: '&___delete', s: DELETE}
   - RETURN
@@ -72,9 +72,9 @@ layers:
   - ''
   - {t: ESC, h: LEFT ALT}
   - {t: SPACE, h: LEFT CONTROL}
-  - '&_left'
-  - '&_down'
-  - '&_right'
+  - '&_left_macro'
+  - '&_down_macro'
+  - '&_right_macro'
   - ''
   - ''
   '1':
