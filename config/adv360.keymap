@@ -232,12 +232,12 @@
   combos {
       compatible = "zmk,combos";
 
-      combo_kana: to_kana {
+      combo_kana {
           key-positions = <KEY_POSITION_LL KEY_POSITION_LR>;
           bindings = <&ime_kana LS(LEFT_COMMAND) KANA>;
       };
 
-      combo_eiji: to_eiji{
+      combo_eiji {
           key-positions = <KEY_POSITION_RL KEY_POSITION_RR>;
           bindings = <&ime_eiji LC(LALT) EIJI>;
       };
