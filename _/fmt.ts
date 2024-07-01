@@ -1,9 +1,7 @@
-// deno run _tool/fmt.ts | pbcopy
-
 const bindings = `
 `
 
-const blockWidth = 15
+const blockWidth = 25
 const pad = 3
 
 const [l1, l2, l3, l4, l5] = bindings.split(/\n/)
@@ -51,4 +49,3 @@ ${l2L}${l2Pad}${l2R}
 ${l3L}${l3LPad}${l3M}${l3RPad}${l3R}
 ${l4L}${l4LPad}${l4M}${l4RPad}${l4R}
 ${l5L}${l5LPad}${l5M}${l5RPad}${l5R}`);
-
