@@ -647,7 +647,7 @@
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
         flavor = "tap-unless-interrupted";
-        tapping-term-ms = <500>;
+        tapping-term-ms = <800>;
         bindings = <&mo>, <&_up_macro>;
         hold-trigger-key-positions = <KEY_POSITION_LEFT_SIDE KEY_POSITION_THUMB KEY_POSITION_LEFT_ARROW>;
     };
@@ -656,7 +656,7 @@
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
         flavor = "tap-unless-interrupted";
-        tapping-term-ms = <500>;
+        tapping-term-ms = <800>;
         bindings = <&mo>, <&_left_macro>;
         hold-trigger-key-positions = <KEY_POSITION_LEFT_SIDE KEY_POSITION_THUMB KEY_POSITION_DOWN_ARROW>;
     };
@@ -665,7 +665,7 @@
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
         flavor = "tap-unless-interrupted";
-        tapping-term-ms = <500>;
+        tapping-term-ms = <800>;
         bindings = <&mo>, <&_right_macro>;
         hold-trigger-key-positions = <KEY_POSITION_LEFT_SIDE KEY_POSITION_THUMB KEY_POSITION_DOWN_ARROW>;
     };
@@ -674,7 +674,7 @@
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
         flavor = "tap-unless-interrupted";
-        tapping-term-ms = <500>;
+        tapping-term-ms = <800>;
         bindings = <&mo>, <&_down_macro>;
         hold-trigger-key-positions = <KEY_POSITION_LEFT_SIDE KEY_POSITION_THUMB KEY_POSITION_LEFT_ARROW>;
     };
@@ -691,7 +691,7 @@
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
         flavor = "tap-unless-interrupted";
-        tapping-term-ms = <500>;
+        tapping-term-ms = <800>;
         bindings = <&mo>, <&tab_macro>;
         hold-trigger-key-positions = <KEY_POSITION_LEFT_SIDE KEY_POSITION_THUMB>;
     };
@@ -708,7 +708,7 @@
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
         flavor = "tap-unless-interrupted";
-        tapping-term-ms = <500>;
+        tapping-term-ms = <800>;
         bindings = <&mo>, <&delete_macro>;
         hold-trigger-key-positions = <KEY_POSITION_LEFT_SIDE KEY_POSITION_THUMB>;
     };
