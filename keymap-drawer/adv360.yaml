@@ -57,9 +57,9 @@ layers:
   - ''
   - {t: N, s: '&eiji_macro N'}
   - {t: M, s: '&eiji_macro M'}
-  - '&up_macro'
-  - {t: '&_tab_macro', s: TAB}
-  - {t: '&_delete_macro', s: DELETE}
+  - {t: UP ARROW, h: '9'}
+  - {t: TAB, h: '5'}
+  - {t: DELETE, h: '6'}
   - RETURN
   - ''
   - ''
@@ -72,9 +72,9 @@ layers:
   - ''
   - {t: ESC, h: LEFT ALT}
   - {t: SPACE, h: LEFT CONTROL}
-  - '&left_macro'
-  - '&down_macro'
-  - '&right_macro'
+  - {t: LEFT ARROW, h: '7'}
+  - {t: DOWN ARROW, h: '10'}
+  - {t: RIGHT ARROW, h: '8'}
   - ''
   - ''
   '1':
@@ -443,7 +443,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - {type: held}
   - ''
   - ''
   - ''
@@ -521,7 +521,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - {type: held}
   - ''
   - ''
   - ''
@@ -611,7 +611,7 @@ layers:
   - ''
   - {t: AGr+Ctl+ \, h: LEFT ALT}
   - {t: AGr+Ctl+ APPLICATION, h: LEFT CONTROL}
-  - ''
+  - {type: held}
   - HOME
   - ''
   - ''
@@ -690,7 +690,7 @@ layers:
   - {t: Gui+Ctl+ APPLICATION, h: LEFT CONTROL}
   - ''
   - END
-  - ''
+  - {type: held}
   - ''
   - ''
   '9':
@@ -750,7 +750,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - {type: held}
   - ''
   - ''
   - ''
@@ -843,7 +843,7 @@ layers:
   - {t: Gui+AGr+ \, h: LEFT ALT}
   - {t: Gui+AGr+ APPLICATION, h: LEFT CONTROL}
   - PAGE DOWN
-  - ''
+  - {type: held}
   - ''
   - ''
   - ''
