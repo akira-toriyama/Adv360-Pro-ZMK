@@ -278,126 +278,6 @@
             ;
     };
 
-    up_macro: up_macro {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press &_up UP_ARROW_LAYER &_up_macro>
-            , <&macro_pause_for_release>
-            , <&macro_release &_up UP_ARROW_LAYER &_up_macro>;
-    };
-
-    _up_macro: _up_macro {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press &mo UP_ARROW_LAYER &kp UP_ARROW>
-            , <&macro_pause_for_release>
-            , <&macro_release &mo UP_ARROW_LAYER &kp UP_ARROW>;
-    };
-
-    left_macro: left_macro {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press &_left LEFT_ARROW_LAYER &_left_macro>
-            , <&macro_pause_for_release>
-            , <&macro_release &_left LEFT_ARROW_LAYER &_left_macro>;
-    };
-
-    _left_macro: _left_macro {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press &mo LEFT_ARROW_LAYER &kp LEFT_ARROW>
-            , <&macro_pause_for_release>
-            , <&macro_release &mo LEFT_ARROW_LAYER &kp LEFT_ARROW>;
-    };
-
-    right_macro: right_macro {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press &_right RIGHT_ARROW_LAYER &_right_macro>
-            , <&macro_pause_for_release>
-            , <&macro_release &_right RIGHT_ARROW_LAYER &_right_macro>;
-    };
-
-    _right_macro: _right_macro {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press &mo RIGHT_ARROW_LAYER &kp RIGHT_ARROW>
-            , <&macro_pause_for_release>
-            , <&macro_release &mo RIGHT_ARROW_LAYER &kp RIGHT_ARROW>;
-    };
-
-    down_macro: down_macro {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press &_down DOWN_ARROW_LAYER &_down_macro>
-            , <&macro_pause_for_release>
-            , <&macro_release &_down DOWN_ARROW_LAYER &_down_macro>;
-    };
-
-    _down_macro: _down_macro {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press &mo DOWN_ARROW_LAYER &kp DOWN_ARROW>
-            , <&macro_pause_for_release>
-            , <&macro_release &mo DOWN_ARROW_LAYER &kp DOWN_ARROW>;
-    };
-
-    tab_macro: tab_macro {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press &mo TAB_LAYER &kp TAB>
-            , <&macro_pause_for_release>
-            , <&macro_release &mo TAB_LAYER &kp TAB>;
-    };
-
-    _tab_macro: _tab_macro {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press &__tab TAB_LAYER &tab_macro>
-            , <&macro_pause_for_release>
-            , <&macro_release &__tab TAB_LAYER &tab_macro>;
-    };
-
-    delete_macro: delete_macro {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press &mo DELETE_LAYER &kp DELETE>
-            , <&macro_pause_for_release>
-            , <&macro_release &mo DELETE_LAYER &kp DELETE>;
-    };
-
-    _delete_macro: _delete_macro {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press &__delete DELETE_LAYER &delete_macro>
-            , <&macro_pause_for_release>
-            , <&macro_release &__delete DELETE_LAYER &delete_macro>;
-    };
-
     // マウスのカーソルをジャンプして マウスレイヤーに切り替え
     // jmp: mouse_pointer_jump {
     //     #binding-cells = <1>;
@@ -648,7 +528,7 @@
         #binding-cells = <2>;
         flavor = "tap-unless-interrupted";
         tapping-term-ms = <800>;
-        bindings = <&mo>, <&_up_macro>;
+        bindings = <&mo>, <&kp>;
         hold-trigger-key-positions = <KEY_POSITION_LEFT_SIDE KEY_POSITION_THUMB KEY_POSITION_LEFT_ARROW>;
     };
 
@@ -657,7 +537,7 @@
         #binding-cells = <2>;
         flavor = "tap-unless-interrupted";
         tapping-term-ms = <800>;
-        bindings = <&mo>, <&_left_macro>;
+        bindings = <&mo>, <&kp>;
         hold-trigger-key-positions = <KEY_POSITION_LEFT_SIDE KEY_POSITION_THUMB KEY_POSITION_DOWN_ARROW>;
     };
 
@@ -666,7 +546,7 @@
         #binding-cells = <2>;
         flavor = "tap-unless-interrupted";
         tapping-term-ms = <800>;
-        bindings = <&mo>, <&_right_macro>;
+        bindings = <&mo>, <&kp>;
         hold-trigger-key-positions = <KEY_POSITION_LEFT_SIDE KEY_POSITION_THUMB KEY_POSITION_DOWN_ARROW>;
     };
 
@@ -675,41 +555,25 @@
         #binding-cells = <2>;
         flavor = "tap-unless-interrupted";
         tapping-term-ms = <800>;
-        bindings = <&mo>, <&_down_macro>;
+        bindings = <&mo>, <&kp>;
         hold-trigger-key-positions = <KEY_POSITION_LEFT_SIDE KEY_POSITION_THUMB KEY_POSITION_LEFT_ARROW>;
     };
-    
-    _tab: _tab {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&_tab_macro>, <&kp TAB>;
-        mods = <(MOD_LGUI|MOD_LSFT|MOD_LCTL|MOD_LALT)>;
-        keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_LCTL|MOD_LALT)>;
-    };
 
-    __tab: __tab {
+    _tab: _tab {
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
         flavor = "tap-unless-interrupted";
         tapping-term-ms = <800>;
-        bindings = <&mo>, <&tab_macro>;
+        bindings = <&mo>, <&kp>;
         hold-trigger-key-positions = <KEY_POSITION_LEFT_SIDE KEY_POSITION_THUMB>;
     };
 
     _delete: _delete {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&_delete_macro>, <&kp DELETE>;
-        mods = <(MOD_LGUI|MOD_LSFT|MOD_LCTL|MOD_LALT)>;
-        keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_LCTL|MOD_LALT)>;
-    };
-
-    __delete: __delete {
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
         flavor = "tap-unless-interrupted";
         tapping-term-ms = <800>;
-        bindings = <&mo>, <&delete_macro>;
+        bindings = <&mo>, <&kp>;
         hold-trigger-key-positions = <KEY_POSITION_LEFT_SIDE KEY_POSITION_THUMB>;
     };
 
@@ -739,8 +603,8 @@
         &none                     &none                     &none                     &none                     &none                     &bt BT_CLR                &bootloader                                                                                                                                                                                                &bootloader               &bt BT_CLR                &none                     &none                     &none                     &none                     &none
         &none                     &_q                       &_w                       &_e                       &_r                       &_t                       &kp LEFT_CONTROL                                                                                                                                                                                                &none                     &_y                       &_u                       &_i                       &_o                       &_p                       &none
         &kp SPACE                 &_a                       &_s                       &_d                       &_f                       &_g                       &kp LEFT_ALT                      &none                     &none                     &none                     &none                     &none                     &_h                                    &_j                       &_k                       &_l                       &_mouse                    &kp BACKSPACE
-        &kp ESCAPE                &_z                       &_x                       &_c                       &_v                       &_b                               &none                     &none                     &_n                       &_m                       &up_macro                &_tab             &_delete    &kp RETURN                             
-        &none                     &none                     &mo LH_SYM2               &mo LH_SYM1               &mo LH_NUM                                                                            &mt T_LL                  &mt T_LR                  &none                  &none                     &mt T_RL                  &mt T_RR                                                                                   &left_macro          &down_macro          &right_macro       &none                     &none
+        &kp ESCAPE                &_z                       &_x                       &_c                       &_v                       &_b                               &none                     &none                     &_n                       &_m                       &_up UP_ARROW_LAYER UP_ARROW                &_tab TAB_LAYER TAB            &_delete DELETE_LAYER DELETE    &kp RETURN                             
+        &none                     &none                     &mo LH_SYM2               &mo LH_SYM1               &mo LH_NUM                                                                            &mt T_LL                  &mt T_LR                  &none                  &none                     &mt T_RL                  &mt T_RR                                                                                   &_left LEFT_ARROW_LAYER LEFT_ARROW        &_down DOWN_ARROW_LAYER DOWN_ARROW          &_right RIGHT_ARROW_LAYER RIGHT_ARROW       &none                     &none
       >;
     };
 
