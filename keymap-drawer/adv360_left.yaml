@@ -336,7 +336,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - \
   - KP 6
   - KP 7
   - KP 8
@@ -354,7 +354,7 @@ layers:
   - ''
   - {type: held}
   - ''
-  - ''
+  - APPLICATION
   - KP EQUAL
   - KP DOT
   - KP MINUS
@@ -377,8 +377,8 @@ layers:
   - KP ENTER
   - ''
   - ''
-  - \
-  - APPLICATION
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -413,7 +413,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Sft+AGr+ \
   - Sft+AGr+ F18
   - Sft+AGr+ F19
   - Sft+AGr+ F20
@@ -431,7 +431,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Sft+AGr+ APPLICATION
   - Sft+AGr+ F23
   - Sft+AGr+ F24
   - 'Sft+AGr+ #'
@@ -450,12 +450,12 @@ layers:
   - ''
   - ''
   - ''
-  - {t: Sft+AGr+ INSERT, h: LEFT SHIFT}
-  - {t: Sft+AGr+ KP ENTER, h: LEFT COMMAND}
+  - Sft+AGr+ INSERT
+  - Sft+AGr+ KP ENTER
   - ''
   - ''
-  - {t: Sft+AGr+ \, h: LEFT ALT}
-  - {t: Sft+AGr+ APPLICATION, h: LEFT CONTROL}
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -490,7 +490,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Sft+Gui+ \
   - Sft+Gui+ F18
   - Sft+Gui+ F19
   - Sft+Gui+ F20
@@ -508,7 +508,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Sft+Gui+ APPLICATION
   - Sft+Gui+ F23
   - Sft+Gui+ F24
   - 'Sft+Gui+ #'
@@ -527,12 +527,12 @@ layers:
   - ''
   - ''
   - ''
-  - {t: Sft+Gui+ INSERT, h: LEFT SHIFT}
-  - {t: Sft+Gui+ KP ENTER, h: LEFT COMMAND}
+  - Sft+Gui+ INSERT
+  - Sft+Gui+ KP ENTER
   - ''
   - ''
-  - {t: Sft+Gui+ \, h: LEFT ALT}
-  - {t: Sft+Gui+ APPLICATION, h: LEFT CONTROL}
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -567,7 +567,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - AGr+Ctl+ \
   - AGr+Ctl+ F18
   - AGr+Ctl+ F19
   - AGr+Ctl+ F20
@@ -585,7 +585,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - AGr+Ctl+ APPLICATION
   - AGr+Ctl+ F23
   - AGr+Ctl+ F24
   - 'AGr+Ctl+ #'
@@ -604,12 +604,12 @@ layers:
   - ''
   - ''
   - ''
-  - {t: AGr+Ctl+ INSERT, h: LEFT SHIFT}
-  - {t: AGr+Ctl+ KP ENTER, h: LEFT COMMAND}
+  - AGr+Ctl+ INSERT
+  - AGr+Ctl+ KP ENTER
   - ''
   - ''
-  - {t: AGr+Ctl+ \, h: LEFT ALT}
-  - {t: AGr+Ctl+ APPLICATION, h: LEFT CONTROL}
+  - ''
+  - ''
   - {type: held}
   - HOME
   - ''
@@ -644,7 +644,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Gui+Ctl+ \
   - Gui+Ctl+ F18
   - Gui+Ctl+ F19
   - Gui+Ctl+ F20
@@ -662,7 +662,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Gui+Ctl+ APPLICATION
   - Gui+Ctl+ F23
   - Gui+Ctl+ F24
   - 'Gui+Ctl+ #'
@@ -681,12 +681,12 @@ layers:
   - ''
   - ''
   - ''
-  - {t: Gui+Ctl+ INSERT, h: LEFT SHIFT}
-  - {t: Gui+Ctl+ KP ENTER, h: LEFT COMMAND}
+  - Gui+Ctl+ INSERT
+  - Gui+Ctl+ KP ENTER
   - ''
   - ''
-  - {t: Gui+Ctl+ \, h: LEFT ALT}
-  - {t: Gui+Ctl+ APPLICATION, h: LEFT CONTROL}
+  - ''
+  - ''
   - ''
   - END
   - {type: held}
@@ -721,7 +721,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Sft+Ctl+ \
   - Sft+Ctl+ F18
   - Sft+Ctl+ F19
   - Sft+Ctl+ F20
@@ -739,7 +739,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Sft+Ctl+ APPLICATION
   - Sft+Ctl+ F23
   - Sft+Ctl+ F24
   - 'Sft+Ctl+ #'
@@ -758,12 +758,12 @@ layers:
   - ''
   - ''
   - ''
-  - {t: Sft+Ctl+ INSERT, h: LEFT SHIFT}
-  - {t: Sft+Ctl+ KP ENTER, h: LEFT COMMAND}
+  - Sft+Ctl+ INSERT
+  - Sft+Ctl+ KP ENTER
   - ''
   - ''
-  - {t: Sft+Ctl+ \, h: LEFT ALT}
-  - {t: Sft+Ctl+ APPLICATION, h: LEFT CONTROL}
+  - ''
+  - ''
   - PAGE UP
   - ''
   - ''
@@ -798,7 +798,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Gui+AGr+ \
   - Gui+AGr+ F18
   - Gui+AGr+ F19
   - Gui+AGr+ F20
@@ -816,7 +816,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Gui+AGr+ APPLICATION
   - Gui+AGr+ F23
   - Gui+AGr+ F24
   - 'Gui+AGr+ #'
@@ -835,12 +835,12 @@ layers:
   - ''
   - ''
   - ''
-  - {t: Gui+AGr+ INSERT, h: LEFT SHIFT}
-  - {t: Gui+AGr+ KP ENTER, h: LEFT COMMAND}
+  - Gui+AGr+ INSERT
+  - Gui+AGr+ KP ENTER
   - ''
   - ''
-  - {t: Gui+AGr+ \, h: LEFT ALT}
-  - {t: Gui+AGr+ APPLICATION, h: LEFT CONTROL}
+  - ''
+  - ''
   - PAGE DOWN
   - {type: held}
   - ''
