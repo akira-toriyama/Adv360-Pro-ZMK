@@ -90,8 +90,8 @@
 #define X_LL_B KP_ASTERISK
 #define X_LL_T_LL INSERT // 親指なので重複OK
 #define X_LL_T_LR KP_ENTER // 親指なので重複OK
-#define X_LL_T_RL NON_US_BACKSLASH // 親指なので重複OK
-#define X_LL_T_RR K_APPLICATION // 親指なので重複OK
+#define X_LL_AA NON_US_BACKSLASH // 親指なので重複OK
+#define X_LL_ZZ K_APPLICATION // 親指なので重複OK
 
 // TAB: SHIFT ALT
 #define X_TAB_Q RS(RA(F13))
@@ -109,10 +109,10 @@
 #define X_TAB_C RS(RA(NON_US_HASH))
 #define X_TAB_V RS(RA(PRINTSCREEN))
 #define X_TAB_B RS(RA(PAUSE_BREAK))
-#define X_TAB_T_LL LEFT_SHIFT RS(RA(INSERT))
-#define X_TAB_T_LR LEFT_COMMAND RS(RA(KP_ENTER))
-#define X_TAB_T_RL LEFT_ALT RS(RA(NON_US_BACKSLASH))
-#define X_TAB_T_RR LEFT_CONTROL RS(RA(K_APPLICATION))
+#define X_TAB_T_LL RS(RA(INSERT))
+#define X_TAB_T_LR RS(RA(KP_ENTER))
+#define X_TAB_AA RS(RA(NON_US_BACKSLASH))
+#define X_TAB_ZZ RS(RA(K_APPLICATION))
 
 // DELETE: SHIFT, COMMAND
 #define X_DELETE_Q RS(RG(F13))
@@ -130,10 +130,10 @@
 #define X_DELETE_C RS(RG(NON_US_HASH))
 #define X_DELETE_V RS(RG(PRINTSCREEN))
 #define X_DELETE_B RS(RG(PAUSE_BREAK))
-#define X_DELETE_T_LL LEFT_SHIFT RS(RG(INSERT))
-#define X_DELETE_T_LR LEFT_COMMAND RS(RG(KP_ENTER))
-#define X_DELETE_T_RL LEFT_ALT RS(RG(NON_US_BACKSLASH))
-#define X_DELETE_T_RR LEFT_CONTROL RS(RG(K_APPLICATION))
+#define X_DELETE_T_LL RS(RG(INSERT))
+#define X_DELETE_T_LR RS(RG(KP_ENTER))
+#define X_DELETE_AA RS(RG(NON_US_BACKSLASH))
+#define X_DELETE_ZZ RS(RG(K_APPLICATION))
 
 // LEFT_ARROW: ALT, CTRL
 #define X_LEFT_ARROW_Q RA(RC(F13))
@@ -151,10 +151,10 @@
 #define X_LEFT_ARROW_C RA(RC(NON_US_HASH))
 #define X_LEFT_ARROW_V RA(RC(PRINTSCREEN))
 #define X_LEFT_ARROW_B RA(RC(PAUSE_BREAK))
-#define X_LEFT_ARROW_T_LL LEFT_SHIFT RA(RC(INSERT))
-#define X_LEFT_ARROW_T_LR LEFT_COMMAND RA(RC(KP_ENTER))
-#define X_LEFT_ARROW_T_RL LEFT_ALT RA(RC(NON_US_BACKSLASH))
-#define X_LEFT_ARROW_T_RR LEFT_CONTROL RA(RC(K_APPLICATION))
+#define X_LEFT_ARROW_T_LL RA(RC(INSERT))
+#define X_LEFT_ARROW_T_LR RA(RC(KP_ENTER))
+#define X_LEFT_ARROW_AA RA(RC(NON_US_BACKSLASH))
+#define X_LEFT_ARROW_ZZ RA(RC(K_APPLICATION))
 
 // RIGHT_ARROW: COMMAND, CTRL
 #define X_RIGHT_ARROW_Q RG(RC(F13))
@@ -172,10 +172,10 @@
 #define X_RIGHT_ARROW_C RG(RC(NON_US_HASH))
 #define X_RIGHT_ARROW_V RG(RC(PRINTSCREEN))
 #define X_RIGHT_ARROW_B RG(RC(PAUSE_BREAK))
-#define X_RIGHT_ARROW_T_LL LEFT_SHIFT RG(RC(INSERT))
-#define X_RIGHT_ARROW_T_LR LEFT_COMMAND RG(RC(KP_ENTER))
-#define X_RIGHT_ARROW_T_RL LEFT_ALT RG(RC(NON_US_BACKSLASH))
-#define X_RIGHT_ARROW_T_RR LEFT_CONTROL RG(RC(K_APPLICATION))
+#define X_RIGHT_ARROW_T_LL RG(RC(INSERT))
+#define X_RIGHT_ARROW_T_LR RG(RC(KP_ENTER))
+#define X_RIGHT_ARROW_AA RG(RC(NON_US_BACKSLASH))
+#define X_RIGHT_ARROW_ZZ RG(RC(K_APPLICATION))
 
 // UP_ARROW: SHIFT, CTRL
 #define X_UP_ARROW_Q RS(RC(F13))
@@ -193,10 +193,10 @@
 #define X_UP_ARROW_C RS(RC(NON_US_HASH))
 #define X_UP_ARROW_V RS(RC(PRINTSCREEN))
 #define X_UP_ARROW_B RS(RC(PAUSE_BREAK))
-#define X_UP_ARROW_T_LL LEFT_SHIFT RS(RC(INSERT))
-#define X_UP_ARROW_T_LR LEFT_COMMAND RS(RC(KP_ENTER))
-#define X_UP_ARROW_T_RL LEFT_ALT RS(RC(NON_US_BACKSLASH))
-#define X_UP_ARROW_T_RR LEFT_CONTROL RS(RC(K_APPLICATION))
+#define X_UP_ARROW_T_LL RS(RC(INSERT))
+#define X_UP_ARROW_T_LR RS(RC(KP_ENTER))
+#define X_UP_ARROW_AA RS(RC(NON_US_BACKSLASH))
+#define X_UP_ARROW_ZZ RS(RC(K_APPLICATION))
 
 // DOWN_ARROW: COMMAND, ALT
 #define X_DOWN_ARROW_Q RG(RA(F13))
@@ -214,10 +214,10 @@
 #define X_DOWN_ARROW_C RG(RA(NON_US_HASH))
 #define X_DOWN_ARROW_V RG(RA(PRINTSCREEN))
 #define X_DOWN_ARROW_B RG(RA(PAUSE_BREAK))
-#define X_DOWN_ARROW_T_LL LEFT_SHIFT RG(RA(INSERT))
-#define X_DOWN_ARROW_T_LR LEFT_COMMAND RG(RA(KP_ENTER))
-#define X_DOWN_ARROW_T_RL LEFT_ALT RG(RA(NON_US_BACKSLASH))
-#define X_DOWN_ARROW_T_RR LEFT_CONTROL RG(RA(K_APPLICATION))
+#define X_DOWN_ARROW_T_LL RG(RA(INSERT))
+#define X_DOWN_ARROW_T_LR RG(RA(KP_ENTER))
+#define X_DOWN_ARROW_AA RG(RA(NON_US_BACKSLASH))
+#define X_DOWN_ARROW_ZZ RG(RA(K_APPLICATION))
 
 // ------------------------------------
 // https://github.com/zmkfirmware/zmk/pull/1811
@@ -581,65 +581,65 @@
     };
     LL_LAYER {
       bindings = <
-        &none   &none        &none        &none        &none        &none        &none                                                                                   &none   &none   &none   &none   &none   &none   &none
-        &none   &kp X_LL_Q   &kp X_LL_W   &kp X_LL_E   &kp X_LL_R   &kp X_LL_T   &none                                                                                   &none   &none   &none   &none   &none   &none   &none
-        &none   &kp X_LL_A   &kp X_LL_S   &kp X_LL_D   &kp X_LL_F   &kp X_LL_G   &none                   &none           &none   &none   &none                           &none   &none   &none   &none   &none   &none   &none
-        &none   &kp X_LL_Z   &kp X_LL_X   &kp X_LL_C   &kp X_LL_V   &kp X_LL_B                                           &none   &none                                           &none   &none   &none   &none   &none   &none
-        &none   &none        &none        &none        &none                             &kp X_LL_T_LL   &kp X_LL_T_LR   &none   &none   &kp X_LL_T_RL   &kp X_LL_T_RR                   &none   &none   &none   &none   &none
+        &none         &none        &none        &none        &none        &none        &none                                                                   &none   &none   &none   &none   &none   &none   &none
+        &none         &kp X_LL_Q   &kp X_LL_W   &kp X_LL_E   &kp X_LL_R   &kp X_LL_T   &none                                                                   &none   &none   &none   &none   &none   &none   &none
+        &kp X_LL_AA   &kp X_LL_A   &kp X_LL_S   &kp X_LL_D   &kp X_LL_F   &kp X_LL_G   &none                   &none           &none   &none   &none           &none   &none   &none   &none   &none   &none   &none
+        &kp X_LL_ZZ   &kp X_LL_Z   &kp X_LL_X   &kp X_LL_C   &kp X_LL_V   &kp X_LL_B                                           &none   &none                           &none   &none   &none   &none   &none   &none
+        &none         &none        &none        &none        &none                             &kp X_LL_T_LL   &kp X_LL_T_LR   &none   &none   &none   &none                   &none   &none   &none   &none   &none
       >;
     };
     TAB_LAYER {
       bindings = <
-        &none   &none         &none         &none         &none         &none         &none                                                                                       &none   &none   &none   &none   &none   &none   &none
-        &none   &kp X_TAB_Q   &kp X_TAB_W   &kp X_TAB_E   &kp X_TAB_R   &kp X_TAB_T   &none                                                                                       &none   &none   &none   &none   &none   &none   &none
-        &none   &kp X_TAB_A   &kp X_TAB_S   &kp X_TAB_D   &kp X_TAB_F   &kp X_TAB_G   &none                    &none            &none   &none   &none                             &none   &none   &none   &none   &none   &none   &none
-        &none   &kp X_TAB_Z   &kp X_TAB_X   &kp X_TAB_C   &kp X_TAB_V   &kp X_TAB_B                                             &none   &none                                             &none   &none   &none   &none   &none   &none
-        &none   &none         &none         &none         &none                               &mt X_TAB_T_LL   &mt X_TAB_T_LR   &none   &none   &mt X_TAB_T_RL   &mt X_TAB_T_RR                   &none   &none   &none   &none   &none
+        &none          &none         &none         &none         &none         &none         &none                                                                     &none   &none   &none   &none   &none   &none   &none
+        &none          &kp X_TAB_Q   &kp X_TAB_W   &kp X_TAB_E   &kp X_TAB_R   &kp X_TAB_T   &none                                                                     &none   &none   &none   &none   &none   &none   &none
+        &kp X_TAB_AA   &kp X_TAB_A   &kp X_TAB_S   &kp X_TAB_D   &kp X_TAB_F   &kp X_TAB_G   &none                    &none            &none   &none   &none           &none   &none   &none   &none   &none   &none   &none
+        &kp X_TAB_ZZ   &kp X_TAB_Z   &kp X_TAB_X   &kp X_TAB_C   &kp X_TAB_V   &kp X_TAB_B                                             &none   &none                           &none   &none   &none   &none   &none   &none
+        &none          &none         &none         &none         &none                               &kp X_TAB_T_LL   &kp X_TAB_T_LR   &none   &none   &none   &none                   &none   &none   &none   &none   &none
       >;
     };
     DELETE_LAYER {
       bindings = <
-        &none   &none            &none            &none            &none            &none            &none                                                                                                   &none   &none   &none   &none   &none   &none   &none
-        &none   &kp X_DELETE_Q   &kp X_DELETE_W   &kp X_DELETE_E   &kp X_DELETE_R   &kp X_DELETE_T   &none                                                                                                   &none   &none   &none   &none   &none   &none   &none
-        &none   &kp X_DELETE_A   &kp X_DELETE_S   &kp X_DELETE_D   &kp X_DELETE_F   &kp X_DELETE_G   &none                       &none               &none   &none   &none                                   &none   &none   &none   &none   &none   &none   &none
-        &none   &kp X_DELETE_Z   &kp X_DELETE_X   &kp X_DELETE_C   &kp X_DELETE_V   &kp X_DELETE_B                                                   &none   &none                                                   &none   &none   &none   &none   &none   &none
-        &none   &none            &none            &none            &none                                     &mt X_DELETE_T_LL   &mt X_DELETE_T_LR   &none   &none   &mt X_DELETE_T_RL   &mt X_DELETE_T_RR                   &none   &none   &none   &none   &none
+        &none             &none            &none            &none            &none            &none            &none                                                                           &none   &none   &none   &none   &none   &none   &none
+        &none             &kp X_DELETE_Q   &kp X_DELETE_W   &kp X_DELETE_E   &kp X_DELETE_R   &kp X_DELETE_T   &none                                                                           &none   &none   &none   &none   &none   &none   &none
+        &kp X_DELETE_AA   &kp X_DELETE_A   &kp X_DELETE_S   &kp X_DELETE_D   &kp X_DELETE_F   &kp X_DELETE_G   &none                       &none               &none   &none   &none           &none   &none   &none   &none   &none   &none   &none
+        &kp X_DELETE_ZZ   &kp X_DELETE_Z   &kp X_DELETE_X   &kp X_DELETE_C   &kp X_DELETE_V   &kp X_DELETE_B                                                   &none   &none                           &none   &none   &none   &none   &none   &none
+        &none             &none            &none            &none            &none                                     &kp X_DELETE_T_LL   &kp X_DELETE_T_LR   &none   &none   &none   &none                   &none   &none   &none   &none   &none
       >;
     };
     LEFT_ARROW_LAYER {
       bindings = <
-        &none   &none                &none                &none                &none                &none                &none                                                                                                                   &none   &none   &none   &none      &none   &none   &none
-        &none   &kp X_LEFT_ARROW_Q   &kp X_LEFT_ARROW_W   &kp X_LEFT_ARROW_E   &kp X_LEFT_ARROW_R   &kp X_LEFT_ARROW_T   &none                                                                                                                   &none   &none   &none   &none      &none   &none   &none
-        &none   &kp X_LEFT_ARROW_A   &kp X_LEFT_ARROW_S   &kp X_LEFT_ARROW_D   &kp X_LEFT_ARROW_F   &kp X_LEFT_ARROW_G   &none                           &none                   &none   &none   &none                                           &none   &none   &none   &none      &none   &none   &none
-        &none   &kp X_LEFT_ARROW_Z   &kp X_LEFT_ARROW_X   &kp X_LEFT_ARROW_C   &kp X_LEFT_ARROW_V   &kp X_LEFT_ARROW_B                                                           &none   &none                                                           &none   &none   &none      &none   &none   &none
-        &none   &none                &none                &none                &none                                             &mt X_LEFT_ARROW_T_LL   &mt X_LEFT_ARROW_T_LR   &none   &none   &mt X_LEFT_ARROW_T_RL   &mt X_LEFT_ARROW_T_RR                   &none   &kp HOME   &none   &none   &none
+        &none                 &none                &none                &none                &none                &none                &none                                                                                   &none   &none   &none   &none      &none   &none   &none
+        &none                 &kp X_LEFT_ARROW_Q   &kp X_LEFT_ARROW_W   &kp X_LEFT_ARROW_E   &kp X_LEFT_ARROW_R   &kp X_LEFT_ARROW_T   &none                                                                                   &none   &none   &none   &none      &none   &none   &none
+        &kp X_LEFT_ARROW_AA   &kp X_LEFT_ARROW_A   &kp X_LEFT_ARROW_S   &kp X_LEFT_ARROW_D   &kp X_LEFT_ARROW_F   &kp X_LEFT_ARROW_G   &none                           &none                   &none   &none   &none           &none   &none   &none   &none      &none   &none   &none
+        &kp X_LEFT_ARROW_ZZ   &kp X_LEFT_ARROW_Z   &kp X_LEFT_ARROW_X   &kp X_LEFT_ARROW_C   &kp X_LEFT_ARROW_V   &kp X_LEFT_ARROW_B                                                           &none   &none                           &none   &none   &none      &none   &none   &none
+        &none                 &none                &none                &none                &none                                             &kp X_LEFT_ARROW_T_LL   &kp X_LEFT_ARROW_T_LR   &none   &none   &none   &none                   &none   &kp HOME   &none   &none   &none
       >;
     };
     RIGHT_ARROW_LAYER {
       bindings = <
-        &none   &none                 &none                 &none                 &none                 &none                 &none                                                                                                                       &none   &none   &none   &none     &none   &none   &none
-        &none   &kp X_RIGHT_ARROW_Q   &kp X_RIGHT_ARROW_W   &kp X_RIGHT_ARROW_E   &kp X_RIGHT_ARROW_R   &kp X_RIGHT_ARROW_T   &none                                                                                                                       &none   &none   &none   &none     &none   &none   &none
-        &none   &kp X_RIGHT_ARROW_A   &kp X_RIGHT_ARROW_S   &kp X_RIGHT_ARROW_D   &kp X_RIGHT_ARROW_F   &kp X_RIGHT_ARROW_G   &none                            &none                    &none   &none   &none                                             &none   &none   &none   &none     &none   &none   &none
-        &none   &kp X_RIGHT_ARROW_Z   &kp X_RIGHT_ARROW_X   &kp X_RIGHT_ARROW_C   &kp X_RIGHT_ARROW_V   &kp X_RIGHT_ARROW_B                                                             &none   &none                                                             &none   &none   &none     &none   &none   &none
-        &none   &none                 &none                 &none                 &none                                               &mt X_RIGHT_ARROW_T_LL   &mt X_RIGHT_ARROW_T_LR   &none   &none   &mt X_RIGHT_ARROW_T_RL   &mt X_RIGHT_ARROW_T_RR                   &none   &kp END   &none   &none   &none
+        &none                  &none                 &none                 &none                 &none                 &none                 &none                                                                                     &none   &none   &none   &none     &none   &none   &none
+        &none                  &kp X_RIGHT_ARROW_Q   &kp X_RIGHT_ARROW_W   &kp X_RIGHT_ARROW_E   &kp X_RIGHT_ARROW_R   &kp X_RIGHT_ARROW_T   &none                                                                                     &none   &none   &none   &none     &none   &none   &none
+        &kp X_RIGHT_ARROW_AA   &kp X_RIGHT_ARROW_A   &kp X_RIGHT_ARROW_S   &kp X_RIGHT_ARROW_D   &kp X_RIGHT_ARROW_F   &kp X_RIGHT_ARROW_G   &none                            &none                    &none   &none   &none           &none   &none   &none   &none     &none   &none   &none
+        &kp X_RIGHT_ARROW_ZZ   &kp X_RIGHT_ARROW_Z   &kp X_RIGHT_ARROW_X   &kp X_RIGHT_ARROW_C   &kp X_RIGHT_ARROW_V   &kp X_RIGHT_ARROW_B                                                             &none   &none                           &none   &none   &none     &none   &none   &none
+        &none                  &none                 &none                 &none                 &none                                               &kp X_RIGHT_ARROW_T_LL   &kp X_RIGHT_ARROW_T_LR   &none   &none   &none   &none                   &none   &kp END   &none   &none   &none
       >;
     };
     UP_ARROW_LAYER {
       bindings = <
-        &none   &none              &none              &none              &none              &none              &none                                                                                                           &none   &none   &none         &none   &none   &none   &none
-        &none   &kp X_UP_ARROW_Q   &kp X_UP_ARROW_W   &kp X_UP_ARROW_E   &kp X_UP_ARROW_R   &kp X_UP_ARROW_T   &none                                                                                                           &none   &none   &none         &none   &none   &none   &none
-        &none   &kp X_UP_ARROW_A   &kp X_UP_ARROW_S   &kp X_UP_ARROW_D   &kp X_UP_ARROW_F   &kp X_UP_ARROW_G   &none                         &none                 &none   &none   &none                                       &none   &none   &none         &none   &none   &none   &none
-        &none   &kp X_UP_ARROW_Z   &kp X_UP_ARROW_X   &kp X_UP_ARROW_C   &kp X_UP_ARROW_V   &kp X_UP_ARROW_B                                                       &none   &none                                                       &none   &none         &none   &none   &none   &none
-        &none   &none              &none              &none              &none                                         &mt X_UP_ARROW_T_LL   &mt X_UP_ARROW_T_LR   &none   &none   &mt X_UP_ARROW_T_RL   &mt X_UP_ARROW_T_RR                   &kp PAGE_UP   &none   &none   &none   &none
+        &none               &none              &none              &none              &none              &none              &none                                                                               &none   &none   &none         &none   &none   &none   &none
+        &none               &kp X_UP_ARROW_Q   &kp X_UP_ARROW_W   &kp X_UP_ARROW_E   &kp X_UP_ARROW_R   &kp X_UP_ARROW_T   &none                                                                               &none   &none   &none         &none   &none   &none   &none
+        &kp X_UP_ARROW_AA   &kp X_UP_ARROW_A   &kp X_UP_ARROW_S   &kp X_UP_ARROW_D   &kp X_UP_ARROW_F   &kp X_UP_ARROW_G   &none                         &none                 &none   &none   &none           &none   &none   &none         &none   &none   &none   &none
+        &kp X_UP_ARROW_ZZ   &kp X_UP_ARROW_Z   &kp X_UP_ARROW_X   &kp X_UP_ARROW_C   &kp X_UP_ARROW_V   &kp X_UP_ARROW_B                                                       &none   &none                           &none   &none         &none   &none   &none   &none
+        &none               &none              &none              &none              &none                                         &kp X_UP_ARROW_T_LL   &kp X_UP_ARROW_T_LR   &none   &none   &none   &none                   &kp PAGE_UP   &none   &none   &none   &none
       >;
     };
     DOWN_ARROW_LAYER {
       bindings = <
-        &none   &none                &none                &none                &none                &none                &none                                                                                                                   &none   &none   &none           &none   &none   &none   &none
-        &none   &kp X_DOWN_ARROW_Q   &kp X_DOWN_ARROW_W   &kp X_DOWN_ARROW_E   &kp X_DOWN_ARROW_R   &kp X_DOWN_ARROW_T   &none                                                                                                                   &none   &none   &none           &none   &none   &none   &none
-        &none   &kp X_DOWN_ARROW_A   &kp X_DOWN_ARROW_S   &kp X_DOWN_ARROW_D   &kp X_DOWN_ARROW_F   &kp X_DOWN_ARROW_G   &none                           &none                   &none   &none   &none                                           &none   &none   &none           &none   &none   &none   &none
-        &none   &kp X_DOWN_ARROW_Z   &kp X_DOWN_ARROW_X   &kp X_DOWN_ARROW_C   &kp X_DOWN_ARROW_V   &kp X_DOWN_ARROW_B                                                           &none   &none                                                           &none   &none           &none   &none   &none   &none
-        &none   &none                &none                &none                &none                                             &mt X_DOWN_ARROW_T_LL   &mt X_DOWN_ARROW_T_LR   &none   &none   &mt X_DOWN_ARROW_T_RL   &mt X_DOWN_ARROW_T_RR                   &kp PAGE_DOWN   &none   &none   &none   &none
+        &none                 &none                &none                &none                &none                &none                &none                                                                                   &none   &none   &none           &none   &none   &none   &none
+        &none                 &kp X_DOWN_ARROW_Q   &kp X_DOWN_ARROW_W   &kp X_DOWN_ARROW_E   &kp X_DOWN_ARROW_R   &kp X_DOWN_ARROW_T   &none                                                                                   &none   &none   &none           &none   &none   &none   &none
+        &kp X_DOWN_ARROW_AA   &kp X_DOWN_ARROW_A   &kp X_DOWN_ARROW_S   &kp X_DOWN_ARROW_D   &kp X_DOWN_ARROW_F   &kp X_DOWN_ARROW_G   &none                           &none                   &none   &none   &none           &none   &none   &none           &none   &none   &none   &none
+        &kp X_DOWN_ARROW_ZZ   &kp X_DOWN_ARROW_Z   &kp X_DOWN_ARROW_X   &kp X_DOWN_ARROW_C   &kp X_DOWN_ARROW_V   &kp X_DOWN_ARROW_B                                                           &none   &none                           &none   &none           &none   &none   &none   &none
+        &none                 &none                &none                &none                &none                                             &kp X_DOWN_ARROW_T_LL   &kp X_DOWN_ARROW_T_LR   &none   &none   &none   &none                   &kp PAGE_DOWN   &none   &none   &none   &none
       >;
     };
     MOUSE_LAYER {
