@@ -20,7 +20,7 @@ layers:
   - {t: E, s: '&eiji_macro E'}
   - {t: R, s: '&eiji_macro R'}
   - {t: T, s: '&eiji_macro T'}
-  - LEFT CONTROL
+  - ''
   - ''
   - {t: Y, s: '&eiji_macro Y'}
   - {t: U, s: '&eiji_macro U'}
@@ -34,7 +34,7 @@ layers:
   - {t: D, s: '&eiji_macro D'}
   - {t: F, s: '&eiji_macro F'}
   - {t: G, s: '&eiji_macro G'}
-  - LEFT ALT
+  - ''
   - ''
   - ''
   - ''
@@ -139,8 +139,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
+  - TAB
+  - RETURN
   - {type: held}
   - {t: RETURN, h: LEFT SHIFT}
   - {t: BACKSPACE, h: LEFT COMMAND}
@@ -216,9 +216,9 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - BACKSPACE
   - {type: held}
-  - ''
+  - DELETE
   - {t: RETURN, h: LEFT SHIFT}
   - {t: BACKSPACE, h: LEFT COMMAND}
   - ''
@@ -294,8 +294,8 @@ layers:
   - ''
   - ''
   - {type: held}
-  - ''
-  - ''
+  - LCTRL
+  - LALT
   - {t: RETURN, h: LEFT SHIFT}
   - {t: BACKSPACE, h: LEFT COMMAND}
   - ''
