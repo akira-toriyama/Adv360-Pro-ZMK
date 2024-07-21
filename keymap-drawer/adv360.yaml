@@ -57,9 +57,9 @@ layers:
   - ''
   - {t: N, s: '&eiji_macro N'}
   - {t: M, s: '&eiji_macro M'}
-  - {t: UP ARROW, h: '9'}
-  - {t: TAB, h: '5'}
-  - {t: DELETE, h: '6'}
+  - {t: UP ARROW, h: '9', s: UP ARROW}
+  - {t: TAB, h: '5', s: TAB}
+  - {t: DELETE, h: '6', s: DELETE}
   - RETURN
   - ''
   - ''
@@ -72,9 +72,9 @@ layers:
   - ''
   - {t: ESC, h: LEFT ALT}
   - {t: SPACE, h: LEFT CONTROL}
-  - {t: LEFT ARROW, h: '7'}
-  - {t: DOWN ARROW, h: '10'}
-  - {t: RIGHT ARROW, h: '8'}
+  - {t: LEFT ARROW, h: '7', s: LEFT ARROW}
+  - {t: DOWN ARROW, h: '10', s: DOWN ARROW}
+  - {t: RIGHT ARROW, h: '8', s: RIGHT ARROW}
   - ''
   - ''
   '1':
@@ -323,7 +323,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - INTERNATIONAL 3
   - KP 1
   - KP 2
   - KP 3
@@ -337,7 +337,7 @@ layers:
   - ''
   - ''
   - ''
-  - \
+  - INTERNATIONAL 1
   - KP 6
   - KP 7
   - KP 8
@@ -355,7 +355,7 @@ layers:
   - ''
   - {type: held}
   - ''
-  - APPLICATION
+  - INTERNATIONAL 2
   - KP EQUAL
   - KP DOT
   - KP MINUS
@@ -371,11 +371,11 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - INSERT
-  - KP ENTER
+  - INTERNATIONAL 6
+  - INTERNATIONAL 5
+  - INTERNATIONAL 4
+  - INTERNATIONAL 7
+  - INTERNATIONAL 8
   - ''
   - ''
   - ''
@@ -400,7 +400,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Sft+AGr+ LANGUAGE 5
   - Sft+AGr+ F13
   - Sft+AGr+ F14
   - Sft+AGr+ F15
@@ -448,9 +448,9 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
+  - Sft+AGr+ LANGUAGE 8
+  - Sft+AGr+ LANGUAGE 7
+  - Sft+AGr+ LANGUAGE 6
   - Sft+AGr+ INSERT
   - Sft+AGr+ KP ENTER
   - ''
@@ -477,7 +477,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Sft+Gui+ LANGUAGE 5
   - Sft+Gui+ F13
   - Sft+Gui+ F14
   - Sft+Gui+ F15
@@ -525,9 +525,9 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
+  - Sft+Gui+ LANGUAGE 8
+  - Sft+Gui+ LANGUAGE 7
+  - Sft+Gui+ LANGUAGE 6
   - Sft+Gui+ INSERT
   - Sft+Gui+ KP ENTER
   - ''
@@ -554,7 +554,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - AGr+Ctl+ LANGUAGE 5
   - AGr+Ctl+ F13
   - AGr+Ctl+ F14
   - AGr+Ctl+ F15
@@ -602,9 +602,9 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
+  - AGr+Ctl+ LANGUAGE 8
+  - AGr+Ctl+ LANGUAGE 7
+  - AGr+Ctl+ LANGUAGE 6
   - AGr+Ctl+ INSERT
   - AGr+Ctl+ KP ENTER
   - ''
@@ -631,7 +631,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Gui+Ctl+ LANGUAGE 5
   - Gui+Ctl+ F13
   - Gui+Ctl+ F14
   - Gui+Ctl+ F15
@@ -679,9 +679,9 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
+  - Gui+Ctl+ LANGUAGE 8
+  - Gui+Ctl+ LANGUAGE 7
+  - Gui+Ctl+ LANGUAGE 6
   - Gui+Ctl+ INSERT
   - Gui+Ctl+ KP ENTER
   - ''
@@ -708,7 +708,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Sft+Ctl+ LANGUAGE 5
   - Sft+Ctl+ F13
   - Sft+Ctl+ F14
   - Sft+Ctl+ F15
@@ -756,9 +756,9 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
+  - Sft+Ctl+ LANGUAGE 8
+  - Sft+Ctl+ LANGUAGE 7
+  - Sft+Ctl+ LANGUAGE 6
   - Sft+Ctl+ INSERT
   - Sft+Ctl+ KP ENTER
   - ''
@@ -785,7 +785,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Gui+AGr+ LANGUAGE 5
   - Gui+AGr+ F13
   - Gui+AGr+ F14
   - Gui+AGr+ F15
@@ -833,9 +833,9 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
+  - Gui+AGr+ LANGUAGE 8
+  - Gui+AGr+ LANGUAGE 7
+  - Gui+AGr+ LANGUAGE 6
   - Gui+AGr+ INSERT
   - Gui+AGr+ KP ENTER
   - ''
