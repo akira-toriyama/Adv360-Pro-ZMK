@@ -620,38 +620,38 @@
 
     DEFAULT_LAYER {
       bindings = <
-        &none        &none   &none         &none         &none        &bt BT_CLR   &bootloader                                                                    &bootloader   &bt BT_CLR   &none    &none    &none     &none      &none
-        &none        &_q     &_w           &_e           &_r          &_t          &kp LEFT_CONTROL                                                               &none         &_y          &_u      &_i      &_o       &_p        &none
-        &kp SPACE    &_a     &_s           &_d           &_f          &_g          &kp LEFT_ALT                  &none      &none   &none   &none                 &none         &_h          &_j      &_k      &_l       &_mouse    &kp BACKSPACE
-        &kp ESCAPE   &_z     &_x           &_c           &_v          &_b                                                   &none   &none                                       &_n          &_m      &_up     &_tab     &_delete   &kp RETURN
-        &none        &none   &mo LH_SYM2   &mo LH_SYM1   &mo LH_NUM                                   &mt T_LL   &mt T_LR   &none   &none   &mt T_RL   &mt T_RR                              &_left   &_down   &_right   &none      &none
+        &none        &none   &none         &none         &none        &bt BT_CLR   &bootloader                                                               &bootloader   &bt BT_CLR   &none    &none    &none     &none      &none
+        &none        &_q     &_w           &_e           &_r          &_t          &none                                                                     &none         &_y          &_u      &_i      &_o       &_p        &none
+        &kp SPACE    &_a     &_s           &_d           &_f          &_g          &none                    &none      &none   &none   &none                 &none         &_h          &_j      &_k      &_l       &_mouse    &kp BACKSPACE
+        &kp ESCAPE   &_z     &_x           &_c           &_v          &_b                                              &none   &none                                       &_n          &_m      &_up     &_tab     &_delete   &kp RETURN
+        &none        &none   &mo LH_SYM2   &mo LH_SYM1   &mo LH_NUM                              &mt T_LL   &mt T_LR   &none   &none   &mt T_RL   &mt T_RR                              &_left   &_down   &_right   &none      &none
       >;
     };
     NUM_LAYER {
       bindings = <
-        &none   &none   &none   &none   &none   &none   &none                                                               &none   &none            &none            &none            &none            &none   &none
-        &none   &none   &none   &none   &none   &none   &none                                                               &none   &none            &eiji_macro N7   &eiji_macro N8   &eiji_macro N9   &none   &none
-        &none   &none   &none   &none   &none   &none   &none              &none      &none   &none   &none                 &none   &none            &eiji_macro N4   &eiji_macro N5   &eiji_macro N6   &none   &none
-        &none   &none   &none   &none   &none   &none                                 &none   &none                                 &eiji_macro N0   &eiji_macro N1   &eiji_macro N2   &eiji_macro N3   &none   &none
-        &none   &none   &none   &none   &none                   &mt T_LL   &mt T_LR   &none   &none   &mt T_RL   &mt T_RR                            &none            &none            &none            &none   &none
+        &none   &none   &none     &none        &none   &none   &none                                                               &none   &none            &none            &none            &none            &none   &none
+        &none   &none   &none     &none        &none   &none   &none                                                               &none   &none            &eiji_macro N7   &eiji_macro N8   &eiji_macro N9   &none   &none
+        &none   &none   &none     &none        &none   &none   &none              &none      &none   &none   &none                 &none   &none            &eiji_macro N4   &eiji_macro N5   &eiji_macro N6   &none   &none
+        &none   &none   &none     &none        &none   &none                                 &none   &none                                 &eiji_macro N0   &eiji_macro N1   &eiji_macro N2   &eiji_macro N3   &none   &none
+        &none   &none   &kp TAB   &kp RETURN   &none                   &mt T_LL   &mt T_LR   &none   &none   &mt T_RL   &mt T_RR                            &none            &none            &none            &none   &none
       >;
     };
     SYMBOL1_LAYER {
       bindings = <
-        &none   &none   &none   &none   &none   &none   &none                                                               &none   &none                       &none                      &none                   &none                     &none                   &none
-        &none   &none   &none   &none   &none   &none   &none                                                               &none   &eiji_macro UNDERSCORE      &eiji_macro PIPE           &eiji_macro AMPERSAND   &eiji_macro EXCLAMATION   &eiji_macro QUESTION    &none
-        &none   &none   &none   &none   &none   &none   &none              &none      &none   &none   &none                 &none   &eiji_macro HASH            &eiji_macro COMMA          &eiji_macro PERIOD      &eiji_macro SEMICOLON     &eiji_macro COLON       &eiji_macro AT_SIGN
-        &none   &none   &none   &none   &none   &none                                 &none   &none                                 &eiji_macro DOUBLE_QUOTES   &eiji_macro SINGLE_QUOTE   &eiji_macro GRAVE       &eiji_macro SLASH         &eiji_macro BACKSLASH   &none
-        &none   &none   &none   &none   &none                   &mt T_LL   &mt T_LR   &none   &none   &mt T_RL   &mt T_RR                                       &none                      &none                   &none                     &none                   &none
+        &none   &none   &none           &none   &none        &none   &none                                                               &none   &none                       &none                      &none                   &none                     &none                   &none
+        &none   &none   &none           &none   &none        &none   &none                                                               &none   &eiji_macro UNDERSCORE      &eiji_macro PIPE           &eiji_macro AMPERSAND   &eiji_macro EXCLAMATION   &eiji_macro QUESTION    &none
+        &none   &none   &none           &none   &none        &none   &none              &none      &none   &none   &none                 &none   &eiji_macro HASH            &eiji_macro COMMA          &eiji_macro PERIOD      &eiji_macro SEMICOLON     &eiji_macro COLON       &eiji_macro AT_SIGN
+        &none   &none   &none           &none   &none        &none                                 &none   &none                                 &eiji_macro DOUBLE_QUOTES   &eiji_macro SINGLE_QUOTE   &eiji_macro GRAVE       &eiji_macro SLASH         &eiji_macro BACKSLASH   &none
+        &none   &none   &kp BACKSPACE   &none   &kp DELETE                   &mt T_LL   &mt T_LR   &none   &none   &mt T_RL   &mt T_RR                                       &none                      &none                   &none                     &none                   &none
       >;
     };
     SYMBOL2_LAYER {
       bindings = <
-        &none   &none   &none   &none   &none   &none   &none                                                               &none   &none               &none                   &none                      &none                      &none                       &none
-        &none   &none   &none   &none   &none   &none   &none                                                               &none   &eiji_macro CARET   &eiji_macro LESS_THAN   &eiji_macro GREATER_THAN   &eiji_macro LEFT_BRACKET   &eiji_macro RIGHT_BRACKET   &none
-        &none   &none   &none   &none   &none   &none   &none              &none      &none   &none   &none                 &none   &eiji_macro EQUAL   &eiji_macro PLUS        &eiji_macro MINUS          &eiji_macro ASTERISK       &eiji_macro PERCENT         &eiji_macro DOLLAR
-        &none   &none   &none   &none   &none   &none                                 &none   &none                                 &eiji_macro TILDE   &eiji_macro LPAR        &eiji_macro RPAR           &eiji_macro LEFT_BRACE     &eiji_macro RIGHT_BRACE     &none
-        &none   &none   &none   &none   &none                   &mt T_LL   &mt T_LR   &none   &none   &mt T_RL   &mt T_RR                               &none                   &none                      &none                      &none                       &none
+        &none   &none   &none   &none       &none      &none   &none                                                               &none   &none               &none                   &none                      &none                      &none                       &none
+        &none   &none   &none   &none       &none      &none   &none                                                               &none   &eiji_macro CARET   &eiji_macro LESS_THAN   &eiji_macro GREATER_THAN   &eiji_macro LEFT_BRACKET   &eiji_macro RIGHT_BRACKET   &none
+        &none   &none   &none   &none       &none      &none   &none              &none      &none   &none   &none                 &none   &eiji_macro EQUAL   &eiji_macro PLUS        &eiji_macro MINUS          &eiji_macro ASTERISK       &eiji_macro PERCENT         &eiji_macro DOLLAR
+        &none   &none   &none   &none       &none      &none                                 &none   &none                                 &eiji_macro TILDE   &eiji_macro LPAR        &eiji_macro RPAR           &eiji_macro LEFT_BRACE     &eiji_macro RIGHT_BRACE     &none
+        &none   &none   &none   &kp LCTRL   &kp LALT                   &mt T_LL   &mt T_LR   &none   &none   &mt T_RL   &mt T_RR                               &none                   &none                      &none                      &none                       &none
       >;
     };
     LL_LAYER {
