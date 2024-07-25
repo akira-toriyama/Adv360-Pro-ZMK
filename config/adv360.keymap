@@ -70,7 +70,7 @@
   28 29 30 31 32 33 34 \
   46 47 48 49 50 51    \
   60 61 62 63 64
-#define KEY_POSITION_THUMB KEY_POSITION_LL KEY_POSITION_LR KEY_POSITION_RL KEY_POSITION_RR
+#define KEY_POSITION_L_THUMB KEY_POSITION_LL KEY_POSITION_LR
 
 // ------------------------------------
 // OSに渡す用ショートカット
@@ -522,7 +522,7 @@
       flavor = "tap-unless-interrupted";
       tapping-term-ms = <500>;
       bindings = <&mo>, <&kp>;
-      hold-trigger-key-positions = <KEY_POSITION_LEFT_SIDE KEY_POSITION_THUMB KEY_POSITION_LEFT_ARROW>;
+      hold-trigger-key-positions = <KEY_POSITION_LEFT_SIDE KEY_POSITION_L_THUMB KEY_POSITION_LEFT_ARROW>;
     };
     _left: _left {
       compatible = "zmk,behavior-mod-morph";
@@ -537,7 +537,7 @@
       flavor = "tap-unless-interrupted";
       tapping-term-ms = <500>;
       bindings = <&mo>, <&kp>;
-      hold-trigger-key-positions = <KEY_POSITION_LEFT_SIDE KEY_POSITION_THUMB KEY_POSITION_DOWN_ARROW>;
+      hold-trigger-key-positions = <KEY_POSITION_LEFT_SIDE KEY_POSITION_L_THUMB KEY_POSITION_DOWN_ARROW>;
     };
     _right: _right {
       compatible = "zmk,behavior-mod-morph";
@@ -552,7 +552,7 @@
       flavor = "tap-unless-interrupted";
       tapping-term-ms = <500>;
       bindings = <&mo>, <&kp>;
-      hold-trigger-key-positions = <KEY_POSITION_LEFT_SIDE KEY_POSITION_THUMB KEY_POSITION_DOWN_ARROW>;
+      hold-trigger-key-positions = <KEY_POSITION_LEFT_SIDE KEY_POSITION_L_THUMB KEY_POSITION_DOWN_ARROW>;
     };
     _down: _down {
       compatible = "zmk,behavior-mod-morph";
@@ -567,7 +567,7 @@
       flavor = "tap-unless-interrupted";
       tapping-term-ms = <500>;
       bindings = <&mo>, <&kp>;
-      hold-trigger-key-positions = <KEY_POSITION_LEFT_SIDE KEY_POSITION_THUMB KEY_POSITION_LEFT_ARROW>;
+      hold-trigger-key-positions = <KEY_POSITION_LEFT_SIDE KEY_POSITION_L_THUMB KEY_POSITION_LEFT_ARROW>;
     };
     _tab: _tab {
       compatible = "zmk,behavior-mod-morph";
@@ -582,7 +582,7 @@
       flavor = "tap-unless-interrupted";
       tapping-term-ms = <500>;
       bindings = <&mo>, <&kp>;
-      hold-trigger-key-positions = <KEY_POSITION_LEFT_SIDE KEY_POSITION_THUMB>;
+      hold-trigger-key-positions = <KEY_POSITION_LEFT_SIDE KEY_POSITION_L_THUMB>;
     };
     _delete: _delete {
       compatible = "zmk,behavior-mod-morph";
@@ -597,7 +597,7 @@
       flavor = "tap-unless-interrupted";
       tapping-term-ms = <500>;
       bindings = <&mo>, <&kp>;
-      hold-trigger-key-positions = <KEY_POSITION_LEFT_SIDE KEY_POSITION_THUMB>;
+      hold-trigger-key-positions = <KEY_POSITION_LEFT_SIDE KEY_POSITION_L_THUMB>;
     };
     _mouse: _mouse {
       compatible = "zmk,behavior-mod-morph";
