@@ -614,6 +614,12 @@
       flavor = "balanced";
       bindings = <&mo>, <&to>;
     };
+    tap_dance_mouse: tap_dance_mouse {
+      compatible = "zmk,behavior-tap-dance";
+      #binding-cells = <0>;
+      tapping-term-ms = <200>;
+      bindings = <&to DEFAULT_LAYER>, <&to DEFAULT_LAYER>;
+    };
   };
   keymap {
     compatible = "zmk,keymap";
@@ -719,11 +725,11 @@
     };
     MOUSE_LAYER {
       bindings = <
-        &none               &none   &none         &none         &none         &none   &none                                                               &none   &none   &none          &none          &none          &none   &none
-        &none               &none   &none         &kp MOUSE_U   &none         &none   &none                                                               &none   &none   &mkp MB3       &none          &none          &none   &none
-        &none               &none   &kp MOUSE_L   &kp MOUSE_D   &kp MOUSE_R   &none   &none              &none      &none   &none   &none                 &none   &none   &mkp MB1       &mkp MB2       &none          &none   &none
-        &to DEFAULT_LAYER   &none   &none         &none         &none         &none                                 &none   &none                                 &none   &none          &kp MOUSE_WU   &none          &none   &none
-        &none               &none   &none         &none         &none                         &mt T_LL   &mt T_LR   &none   &none   &mt T_RL   &mt T_RR                   &kp MOUSE_WL   &kp MOUSE_WD   &kp MOUSE_WR   &none   &none
+        &none   &none   &none         &none         &none         &none   &none                                                               &none   &none   &none          &none          &none          &none              &none
+        &none   &none   &none         &kp MOUSE_U   &none         &none   &none                                                               &none   &none   &mkp MB3       &none          &none          &none              &none
+        &none   &none   &kp MOUSE_L   &kp MOUSE_D   &kp MOUSE_R   &none   &none              &none      &none   &none   &none                 &none   &none   &mkp MB1       &mkp MB2       &none          &tap_dance_mouse   &none
+        &none   &none   &none         &none         &none         &none                                 &none   &none                                 &none   &none          &kp MOUSE_WU   &none          &none              &none
+        &none   &none   &none         &none         &none                         &mt T_LL   &mt T_LR   &none   &none   &mt T_RL   &mt T_RR                   &kp MOUSE_WL   &kp MOUSE_WD   &kp MOUSE_WR   &none              &none
       >;
     };
   };
