@@ -892,9 +892,9 @@ layers:
   - '&mkp MB1'
   - '&mkp MB2'
   - ''
+  - '&tap_dance_mouse'
   - ''
   - ''
-  - {t: '0', h: toggle}
   - ''
   - ''
   - ''
