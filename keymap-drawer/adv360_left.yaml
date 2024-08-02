@@ -44,7 +44,7 @@ layers:
   - {t: J, s: '&eiji_macro J'}
   - {t: K, s: '&eiji_macro K'}
   - {t: L, s: '&eiji_macro L'}
-  - {t: '11', h: '4', s: KP 0}
+  - {t: '&to_mouse_layer_macro 11', h: '4', s: KP 0}
   - BACKSPACE
   - ESCAPE
   - {t: Z, s: '&eiji_macro Z'}
