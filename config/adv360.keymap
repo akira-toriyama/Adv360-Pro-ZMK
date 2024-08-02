@@ -24,8 +24,9 @@
 // エイリアス
 // ------------------------------------
 // 効果音
-// #define X_SOUND_1 LANGUAGE_3
-// #define X_SOUND_2 LANGUAGE_4
+#define X_SOUND_1 LANGUAGE_3
+#define X_SOUND_2 LANGUAGE_4
+
 // 和英
 #define EIJI LANGUAGE_2
 #define KANA LANGUAGE_1
@@ -270,6 +271,20 @@
     };
   };
   macros {
+
+    // レイヤー移動で効果音を鳴らす
+    to_mouse_layer_macro: to_mouse_layer_macro {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&macro_tap &kp X_SOUND_1>, <&macro_tap &to MOUSE_LAYER>;
+    };
+
+    // レイヤー移動で効果音を鳴らす
+    to_default_layer_macro: to_default_layer_macro {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&macro_tap &kp X_SOUND_2>, <&macro_tap &to DEFAULT_LAYER>;
+    };
 
     // 英語入力に切り替える
     eiji_macro: eiji_macro {
@@ -597,13 +612,13 @@
       tapping-term-ms = <200>;
       quick-tap-ms = <0>;
       flavor = "balanced";
-      bindings = <&mo>, <&to>;
+      bindings = <&mo>, <&to_mouse_layer_macro>;
     };
     tap_dance_mouse: tap_dance_mouse {
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&to DEFAULT_LAYER>, <&to DEFAULT_LAYER>;
+      bindings = <&to_default_layer_macro>, <&to_default_layer_macro>;
     };
   };
   keymap {
