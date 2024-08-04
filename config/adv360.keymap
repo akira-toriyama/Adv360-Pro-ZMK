@@ -37,10 +37,9 @@
 #define T_RL LEFT_ALT ESC
 #define T_RR LEFT_CONTROL SPACE
 
-// 左手
-#define LH_NUM NUM_LAYER
-#define LH_SYM1 SYMBOL1_LAYER
-#define LH_SYM2 SYMBOL2_LAYER
+// 和英
+#define X_QQ RG(RA(RS(RC(LANGUAGE_8))))
+#define X_PP RG(RA(RS(RC(LANGUAGE_9))))
 
 // マウス関連
 // zmk に機能追加されるまで、karabiner で代用
@@ -70,12 +69,20 @@
   28 29 30 31 32 33 34 \
   46 47 48 49 50 51    \
   60 61 62 63 64
+#define KEY_POSITION_RIGHT_SIDE 7  8  9 10 11 12 13 \
+  21 22 23 24 25 26 27 \
+  39 40 41 42 43 44 45 \
+      54 55 56 57 58 59 \
+        71 72 73 74 75
 #define KEY_POSITION_L_THUMB KEY_POSITION_LL KEY_POSITION_LR
 
 // ------------------------------------
 // OSに渡す用ショートカット
 // ------------------------------------
 #define X_LL_LL KP_N0
+#define X_LH_NUM RG(RA(RS(RC(LANGUAGE_5))))
+#define X_LH_SYM1 RG(RA(RS(RC(LANGUAGE_6))))
+#define X_LH_SYM2 RG(RA(RS(RC(LANGUAGE_7))))
 
 // LL
 #define X_LL_AA INTERNATIONAL_1
@@ -620,17 +627,26 @@
       tapping-term-ms = <200>;
       bindings = <&to_default_layer_macro>, <&to_default_layer_macro>;
     };
+    _layer: _layer {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      flavor = "hold-preferred";
+      tapping-term-ms = <400>;
+      quick-tap-ms = <200>;
+      bindings = <&mo>, <&kp>;
+      hold-trigger-key-positions = <KEY_POSITION_RIGHT_SIDE 62 63 64>;
+    };
   };
   keymap {
     compatible = "zmk,keymap";
 
     DEFAULT_LAYER {
       bindings = <
-        &none        &none   &none         &none         &none        &bt BT_CLR   &bootloader                                                               &bootloader   &bt BT_CLR   &none    &none    &none     &none      &none
-        &none        &_q     &_w           &_e           &_r          &_t          &none                                                                     &none         &_y          &_u      &_i      &_o       &_p        &none
-        &kp SPACE    &_a     &_s           &_d           &_f          &_g          &none                    &none      &none   &none   &none                 &none         &_h          &_j      &_k      &_l       &_mouse    &kp BACKSPACE
-        &kp ESCAPE   &_z     &_x           &_c           &_v          &_b                                              &none   &none                                       &_n          &_m      &_up     &_tab     &_delete   &kp RETURN
-        &none        &none   &mo LH_SYM2   &mo LH_SYM1   &mo LH_NUM                              &mt T_LL   &mt T_LR   &none   &none   &mt T_RL   &mt T_RR                              &_left   &_down   &_right   &none      &none
+        &none        &none   &none                             &none                             &none                        &bt BT_CLR   &bootloader                                                               &bootloader   &bt BT_CLR   &none    &none    &none     &none      &none
+        &kp X_QQ     &_q     &_w                               &_e                               &_r                          &_t          &none                                                                     &none         &_y          &_u      &_i      &_o       &_p        &kp X_PP
+        &kp SPACE    &_a     &_s                               &_d                               &_f                          &_g          &none                    &none      &none   &none   &none                 &none         &_h          &_j      &_k      &_l       &_mouse    &kp BACKSPACE
+        &kp ESCAPE   &_z     &_x                               &_c                               &_v                          &_b                                              &none   &none                                       &_n          &_m      &_up     &_tab     &_delete   &kp RETURN
+        &none        &none   &_layer SYMBOL2_LAYER X_LH_SYM2   &_layer SYMBOL1_LAYER X_LH_SYM1   &_layer NUM_LAYER X_LH_NUM                              &mt T_LL   &mt T_LR   &none   &none   &mt T_RL   &mt T_RR                              &_left   &_down   &_right   &none      &none
       >;
     };
     NUM_LAYER {
