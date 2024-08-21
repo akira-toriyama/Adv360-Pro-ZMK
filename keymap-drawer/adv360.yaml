@@ -1,0 +1,931 @@
+layout: {qmk_keyboard: adv360}
+layers:
+  '0':
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT CLR
+  - '&bootloader'
+  - '&bootloader'
+  - BT CLR
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Gui+AGr+Sft+Ctl+ LANGUAGE 8
+  - {t: Q, s: '&eiji_macro Q'}
+  - {t: W, s: '&eiji_macro W'}
+  - {t: E, s: '&eiji_macro E'}
+  - {t: R, s: '&eiji_macro R'}
+  - {t: T, s: '&eiji_macro T'}
+  - ''
+  - ''
+  - {t: Y, s: '&eiji_macro Y'}
+  - {t: U, s: '&eiji_macro U'}
+  - {t: I, s: '&eiji_macro I'}
+  - {t: O, s: '&eiji_macro O'}
+  - {t: P, s: '&eiji_macro P'}
+  - Gui+AGr+Sft+Ctl+ LANGUAGE 9
+  - SPACE
+  - {t: A, s: '&eiji_macro A'}
+  - {t: S, s: '&eiji_macro S'}
+  - {t: D, s: '&eiji_macro D'}
+  - {t: F, s: '&eiji_macro F'}
+  - {t: G, s: '&eiji_macro G'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: H, s: '&eiji_macro H'}
+  - {t: J, s: '&eiji_macro J'}
+  - {t: K, s: '&eiji_macro K'}
+  - {t: L, s: '&eiji_macro L'}
+  - {t: '&to_mouse_layer_macro 11', h: '4', s: KP 0}
+  - BACKSPACE
+  - ESCAPE
+  - {t: Z, s: '&eiji_macro Z'}
+  - {t: X, s: '&eiji_macro X'}
+  - {t: C, s: '&eiji_macro C'}
+  - {t: V, s: '&eiji_macro V'}
+  - {t: B, s: '&eiji_macro B'}
+  - ''
+  - ''
+  - {t: N, s: '&eiji_macro N'}
+  - {t: M, s: '&eiji_macro M'}
+  - {t: UP ARROW, h: '9', s: UP ARROW}
+  - {t: TAB, h: '5', s: TAB}
+  - {t: DELETE, h: '6', s: DELETE}
+  - RETURN
+  - ''
+  - ''
+  - {t: Gui+AGr+Sft+Ctl+ LANGUAGE 7, h: '3'}
+  - {t: Gui+AGr+Sft+Ctl+ LANGUAGE 6, h: '2'}
+  - {t: Gui+AGr+Sft+Ctl+ LANGUAGE 5, h: '1'}
+  - {t: RETURN, h: LEFT SHIFT}
+  - {t: BACKSPACE, h: LEFT COMMAND}
+  - ''
+  - ''
+  - {t: ESC, h: LEFT ALT}
+  - {t: SPACE, h: LEFT CONTROL}
+  - {t: LEFT ARROW, h: '7', s: LEFT ARROW}
+  - {t: DOWN ARROW, h: '10', s: DOWN ARROW}
+  - {t: RIGHT ARROW, h: '8', s: RIGHT ARROW}
+  - ''
+  - ''
+  '1':
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&eiji_macro N7'
+  - '&eiji_macro N8'
+  - '&eiji_macro N9'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&eiji_macro N4'
+  - '&eiji_macro N5'
+  - '&eiji_macro N6'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&eiji_macro N0'
+  - '&eiji_macro N1'
+  - '&eiji_macro N2'
+  - '&eiji_macro N3'
+  - ''
+  - ''
+  - ''
+  - ''
+  - TAB
+  - RETURN
+  - {type: held}
+  - {t: RETURN, h: LEFT SHIFT}
+  - {t: BACKSPACE, h: LEFT COMMAND}
+  - ''
+  - ''
+  - {t: ESC, h: LEFT ALT}
+  - {t: SPACE, h: LEFT CONTROL}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  '2':
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&eiji_macro UNDERSCORE'
+  - '&eiji_macro PIPE'
+  - '&eiji_macro AMPERSAND'
+  - '&eiji_macro EXCLAMATION'
+  - '&eiji_macro QUESTION'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&eiji_macro HASH'
+  - '&eiji_macro COMMA'
+  - '&eiji_macro PERIOD'
+  - '&eiji_macro SEMICOLON'
+  - '&eiji_macro COLON'
+  - '&eiji_macro AT_SIGN'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&eiji_macro DOUBLE_QUOTES'
+  - '&eiji_macro SINGLE_QUOTE'
+  - '&eiji_macro GRAVE'
+  - '&eiji_macro SLASH'
+  - '&eiji_macro BACKSLASH'
+  - ''
+  - ''
+  - ''
+  - BACKSPACE
+  - {type: held}
+  - DELETE
+  - {t: RETURN, h: LEFT SHIFT}
+  - {t: BACKSPACE, h: LEFT COMMAND}
+  - ''
+  - ''
+  - {t: ESC, h: LEFT ALT}
+  - {t: SPACE, h: LEFT CONTROL}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  '3':
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&eiji_macro CARET'
+  - '&eiji_macro LESS_THAN'
+  - '&eiji_macro GREATER_THAN'
+  - '&eiji_macro LEFT_BRACKET'
+  - '&eiji_macro RIGHT_BRACKET'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&eiji_macro EQUAL'
+  - '&eiji_macro PLUS'
+  - '&eiji_macro MINUS'
+  - '&eiji_macro ASTERISK'
+  - '&eiji_macro PERCENT'
+  - '&eiji_macro DOLLAR'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&eiji_macro TILDE'
+  - '&eiji_macro LPAR'
+  - '&eiji_macro RPAR'
+  - '&eiji_macro LEFT_BRACE'
+  - '&eiji_macro RIGHT_BRACE'
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - LCTRL
+  - LALT
+  - {t: RETURN, h: LEFT SHIFT}
+  - {t: BACKSPACE, h: LEFT COMMAND}
+  - ''
+  - ''
+  - {t: ESC, h: LEFT ALT}
+  - {t: SPACE, h: LEFT CONTROL}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  '4':
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - INTERNATIONAL 3
+  - KP 1
+  - KP 2
+  - KP 3
+  - KP 4
+  - KP 5
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - INTERNATIONAL 1
+  - KP 6
+  - KP 7
+  - KP 8
+  - KP 9
+  - KP PLUS
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - INTERNATIONAL 2
+  - KP EQUAL
+  - KP DOT
+  - KP MINUS
+  - KP SLASH
+  - KP ASTERISK
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - INTERNATIONAL 6
+  - INTERNATIONAL 5
+  - INTERNATIONAL 4
+  - INTERNATIONAL 7
+  - INTERNATIONAL 8
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  '5':
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Sft+AGr+ LANGUAGE 5
+  - Sft+AGr+ F13
+  - Sft+AGr+ F14
+  - Sft+AGr+ F15
+  - Sft+AGr+ F16
+  - Sft+AGr+ F17
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Sft+AGr+ \
+  - Sft+AGr+ F18
+  - Sft+AGr+ F19
+  - Sft+AGr+ F20
+  - Sft+AGr+ F21
+  - Sft+AGr+ F22
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Sft+AGr+ APPLICATION
+  - Sft+AGr+ F23
+  - Sft+AGr+ F24
+  - 'Sft+AGr+ #'
+  - Sft+AGr+ PRINTSCREEN
+  - Sft+AGr+ PAUSE BREAK
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - Sft+AGr+ LANGUAGE 8
+  - Sft+AGr+ LANGUAGE 7
+  - Sft+AGr+ LANGUAGE 6
+  - Sft+AGr+ INSERT
+  - Sft+AGr+ KP ENTER
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  '6':
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Sft+Gui+ LANGUAGE 5
+  - Sft+Gui+ F13
+  - Sft+Gui+ F14
+  - Sft+Gui+ F15
+  - Sft+Gui+ F16
+  - Sft+Gui+ F17
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Sft+Gui+ \
+  - Sft+Gui+ F18
+  - Sft+Gui+ F19
+  - Sft+Gui+ F20
+  - Sft+Gui+ F21
+  - Sft+Gui+ F22
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Sft+Gui+ APPLICATION
+  - Sft+Gui+ F23
+  - Sft+Gui+ F24
+  - 'Sft+Gui+ #'
+  - Sft+Gui+ PRINTSCREEN
+  - Sft+Gui+ PAUSE BREAK
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - Sft+Gui+ LANGUAGE 8
+  - Sft+Gui+ LANGUAGE 7
+  - Sft+Gui+ LANGUAGE 6
+  - Sft+Gui+ INSERT
+  - Sft+Gui+ KP ENTER
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  '7':
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - AGr+Ctl+ LANGUAGE 5
+  - AGr+Ctl+ F13
+  - AGr+Ctl+ F14
+  - AGr+Ctl+ F15
+  - AGr+Ctl+ F16
+  - AGr+Ctl+ F17
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - AGr+Ctl+ \
+  - AGr+Ctl+ F18
+  - AGr+Ctl+ F19
+  - AGr+Ctl+ F20
+  - AGr+Ctl+ F21
+  - AGr+Ctl+ F22
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - AGr+Ctl+ APPLICATION
+  - AGr+Ctl+ F23
+  - AGr+Ctl+ F24
+  - 'AGr+Ctl+ #'
+  - AGr+Ctl+ PRINTSCREEN
+  - AGr+Ctl+ PAUSE BREAK
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - AGr+Ctl+ LANGUAGE 8
+  - AGr+Ctl+ LANGUAGE 7
+  - AGr+Ctl+ LANGUAGE 6
+  - AGr+Ctl+ INSERT
+  - AGr+Ctl+ KP ENTER
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - HOME
+  - ''
+  - ''
+  - ''
+  '8':
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Gui+Ctl+ LANGUAGE 5
+  - Gui+Ctl+ F13
+  - Gui+Ctl+ F14
+  - Gui+Ctl+ F15
+  - Gui+Ctl+ F16
+  - Gui+Ctl+ F17
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Gui+Ctl+ \
+  - Gui+Ctl+ F18
+  - Gui+Ctl+ F19
+  - Gui+Ctl+ F20
+  - Gui+Ctl+ F21
+  - Gui+Ctl+ F22
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Gui+Ctl+ APPLICATION
+  - Gui+Ctl+ F23
+  - Gui+Ctl+ F24
+  - 'Gui+Ctl+ #'
+  - Gui+Ctl+ PRINTSCREEN
+  - Gui+Ctl+ PAUSE BREAK
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Gui+Ctl+ LANGUAGE 8
+  - Gui+Ctl+ LANGUAGE 7
+  - Gui+Ctl+ LANGUAGE 6
+  - Gui+Ctl+ INSERT
+  - Gui+Ctl+ KP ENTER
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - END
+  - {type: held}
+  - ''
+  - ''
+  '9':
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Sft+Ctl+ LANGUAGE 5
+  - Sft+Ctl+ F13
+  - Sft+Ctl+ F14
+  - Sft+Ctl+ F15
+  - Sft+Ctl+ F16
+  - Sft+Ctl+ F17
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Sft+Ctl+ \
+  - Sft+Ctl+ F18
+  - Sft+Ctl+ F19
+  - Sft+Ctl+ F20
+  - Sft+Ctl+ F21
+  - Sft+Ctl+ F22
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Sft+Ctl+ APPLICATION
+  - Sft+Ctl+ F23
+  - Sft+Ctl+ F24
+  - 'Sft+Ctl+ #'
+  - Sft+Ctl+ PRINTSCREEN
+  - Sft+Ctl+ PAUSE BREAK
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Sft+Ctl+ LANGUAGE 8
+  - Sft+Ctl+ LANGUAGE 7
+  - Sft+Ctl+ LANGUAGE 6
+  - Sft+Ctl+ INSERT
+  - Sft+Ctl+ KP ENTER
+  - ''
+  - ''
+  - ''
+  - ''
+  - PAGE UP
+  - ''
+  - ''
+  - ''
+  - ''
+  '10':
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Gui+AGr+ LANGUAGE 5
+  - Gui+AGr+ F13
+  - Gui+AGr+ F14
+  - Gui+AGr+ F15
+  - Gui+AGr+ F16
+  - Gui+AGr+ F17
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Gui+AGr+ \
+  - Gui+AGr+ F18
+  - Gui+AGr+ F19
+  - Gui+AGr+ F20
+  - Gui+AGr+ F21
+  - Gui+AGr+ F22
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Gui+AGr+ APPLICATION
+  - Gui+AGr+ F23
+  - Gui+AGr+ F24
+  - 'Gui+AGr+ #'
+  - Gui+AGr+ PRINTSCREEN
+  - Gui+AGr+ PAUSE BREAK
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Gui+AGr+ LANGUAGE 8
+  - Gui+AGr+ LANGUAGE 7
+  - Gui+AGr+ LANGUAGE 6
+  - Gui+AGr+ INSERT
+  - Gui+AGr+ KP ENTER
+  - ''
+  - ''
+  - ''
+  - ''
+  - PAGE DOWN
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  '11':
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Gui+AGr+Sft+Ctl+ F21
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&mkp MB3'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Gui+AGr+Sft+Ctl+ F24
+  - Gui+AGr+Sft+Ctl+ F23
+  - Gui+AGr+Sft+Ctl+ F22
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&mkp MB1'
+  - '&mkp MB2'
+  - ''
+  - '&tap_dance_mouse'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Gui+AGr+Sft+Ctl+ F18
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: RETURN, h: LEFT SHIFT}
+  - {t: BACKSPACE, h: LEFT COMMAND}
+  - ''
+  - ''
+  - {t: ESC, h: LEFT ALT}
+  - {t: SPACE, h: LEFT CONTROL}
+  - Gui+AGr+Sft+Ctl+ F20
+  - Gui+AGr+Sft+Ctl+ F17
+  - Gui+AGr+Sft+Ctl+ F19
+  - ''
+  - ''
+combos:
+- p: [65, 66]
+  k: {t: LANGUAGE 1, h: Sft+ LEFT COMMAND}
+- p: [69, 70]
+  k: {t: LANGUAGE 2, h: Ctl+ LALT}
