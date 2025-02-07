@@ -20,6 +20,7 @@
 #define UP_ARROW_LAYER 9
 #define DOWN_ARROW_LAYER 10
 #define MOUSE_LAYER 11
+#define MOUSE_JUMP_LAYER 12
 
 // ------------------------------------
 // エイリアス
@@ -247,6 +248,23 @@
 #define X_DOWN_ARROW_V RG(RA(PRINTSCREEN))
 #define X_DOWN_ARROW_B RG(RA(PAUSE_BREAK))
 
+// MOUSE_JUMP_LAYER: SHIFT, COMMAND, ALT
+#define X_MOUSE_JUMP_Q RS(RG(RA(F13)))
+#define X_MOUSE_JUMP_W RS(RG(RA(F14)))
+#define X_MOUSE_JUMP_E RS(RG(RA(F15)))
+#define X_MOUSE_JUMP_R RS(RG(RA(F16)))
+#define X_MOUSE_JUMP_T RS(RG(RA(F17)))
+#define X_MOUSE_JUMP_A RS(RG(RA(F18)))
+#define X_MOUSE_JUMP_S RS(RG(RA(F19)))
+#define X_MOUSE_JUMP_D RS(RG(RA(F20)))
+#define X_MOUSE_JUMP_F RS(RG(RA(F21)))
+#define X_MOUSE_JUMP_G RS(RG(RA(F22)))
+#define X_MOUSE_JUMP_Z RS(RG(RA(F23)))
+#define X_MOUSE_JUMP_X RS(RG(RA(F24)))
+#define X_MOUSE_JUMP_C RS(RG(RA(NON_US_HASH)))
+#define X_MOUSE_JUMP_V RS(RG(RA(PRINTSCREEN)))
+#define X_MOUSE_JUMP_B RS(RG(RA(PAUSE_BREAK)))
+
 // ------------------------------------
 // https://github.com/zmkfirmware/zmk/pull/1811
 &mt {
@@ -287,16 +305,6 @@
       #binding-cells = <1>;
       bindings = <&macro_tap &kp EIJI>, <&macro_param_1to1>, <&macro_press &kp MACRO_PLACEHOLDER>, <&macro_pause_for_release>, <&macro_param_1to1>, <&macro_release &kp MACRO_PLACEHOLDER>;
     };
-
-    // マウスのカーソルをジャンプして マウスレイヤーに切り替え
-    // jmp: mouse_pointer_jump {
-    // #binding-cells = <1>;
-    // compatible = "zmk,behavior-macro-one-param";
-    // bindings
-    // = <&macro_param_1to1 &kp MACRO_PLACEHOLDER>
-    // , <&to MOUSE_LAYER>
-    // ;
-    // };
   };
   behaviors {
     ime_kana: ime_kana {
@@ -736,11 +744,20 @@
     };
     MOUSE_LAYER {
       bindings = <
-        &none   &none   &none            &none            &none             &none   &none                                                                                         &none   &none   &none            &none            &none             &none              &none
-        &none   &none   &none            &mmv MOVE_UP     &none             &none   &none                                                                                         &none   &none   &none            &none            &none             &none              &none
-        &none   &none   &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &none   &none              &none      &none   &none   &none                                           &none   &none   &mkp MB1         &mkp MB2         &mkp MB3          &tap_dance_mouse   &none
-        &none   &none   &none            &none            &none             &none                                 &none   &none                                                           &none   &none            &msc SCRL_UP     &none             &none              &none
-        &none   &none   &none            &none            &none                             &mt T_LL   &mt T_LR   &none   &none   &_t_r LEFT_ALT ESC   &_t_r LEFT_CONTROL SPACE                   &msc SCRL_LEFT   &msc SCRL_DOWN   &msc SCRL_RIGHT   &none              &none
+        &none   &none   &none            &none            &none             &none   &none                                                                                         &none   &none   &none            &none            &none             &none                  &none
+        &none   &none   &none            &mmv MOVE_UP     &none             &none   &none                                                                                         &none   &none   &none            &none            &none             &none                  &none
+        &none   &none   &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &none   &none              &none      &none   &none   &none                                           &none   &none   &mkp MB1         &mkp MB2         &mkp MB3          &tap_dance_mouse       &none
+        &none   &none   &none            &none            &none             &none                                 &none   &none                                                           &none   &none            &msc SCRL_UP     &none             &mo MOUSE_JUMP_LAYER   &none
+        &none   &none   &none            &none            &none                             &mt T_LL   &mt T_LR   &none   &none   &_t_r LEFT_ALT ESC   &_t_r LEFT_CONTROL SPACE                   &msc SCRL_LEFT   &msc SCRL_DOWN   &msc SCRL_RIGHT   &none                  &none
+      >;
+    };
+    MOUSE_JUMP_LAYER {
+      bindings = <
+        &none   &none                &none                &none                &none                &none                &none                                                   &none   &none   &none   &none   &none   &none   &none
+        &none   &kp X_MOUSE_JUMP_Q   &kp X_MOUSE_JUMP_W   &kp X_MOUSE_JUMP_E   &kp X_MOUSE_JUMP_R   &kp X_MOUSE_JUMP_T   &none                                                   &none   &none   &none   &none   &none   &none   &none
+        &none   &kp X_MOUSE_JUMP_A   &kp X_MOUSE_JUMP_S   &kp X_MOUSE_JUMP_D   &kp X_MOUSE_JUMP_F   &kp X_MOUSE_JUMP_G   &none           &none   &none   &none   &none           &none   &none   &none   &none   &none   &none   &none
+        &none   &kp X_MOUSE_JUMP_Z   &kp X_MOUSE_JUMP_X   &kp X_MOUSE_JUMP_C   &kp X_MOUSE_JUMP_V   &kp X_MOUSE_JUMP_B                           &none   &none                           &none   &none   &none   &none   &none   &none
+        &none   &none                &none                &none                &none                                             &none   &none   &none   &none   &none   &none                   &none   &none   &none   &none   &none
       >;
     };
   };
