@@ -744,11 +744,11 @@
     };
     MOUSE_LAYER {
       bindings = <
-        &none   &none   &none            &none            &none             &none   &none                                                                                         &none   &none   &none            &none            &none             &none                  &none
-        &none   &none   &none            &mmv MOVE_UP     &none             &none   &none                                                                                         &none   &none   &none            &none            &none             &none                  &none
-        &none   &none   &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &none   &none              &none      &none   &none   &none                                           &none   &none   &mkp MB1         &mkp MB2         &mkp MB3          &tap_dance_mouse       &none
-        &none   &none   &none            &none            &none             &none                                 &none   &none                                                           &none   &none            &msc SCRL_UP     &none             &mo MOUSE_JUMP_LAYER   &none
-        &none   &none   &none            &none            &none                             &mt T_LL   &mt T_LR   &none   &none   &_t_r LEFT_ALT ESC   &_t_r LEFT_CONTROL SPACE                   &msc SCRL_LEFT   &msc SCRL_DOWN   &msc SCRL_RIGHT   &none                  &none
+        &none        &none   &none            &none            &none             &none   &none                                                                                         &none   &none   &none            &none            &none             &none                  &none
+        &none        &none   &none            &mmv MOVE_UP     &none             &none   &none                                                                                         &none   &none   &none            &none            &none             &none                  &none
+        &kp SPACE    &none   &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &none   &none              &none      &none   &none   &none                                           &none   &none   &mkp MB1         &mkp MB2         &mkp MB3          &tap_dance_mouse       &kp BACKSPACE
+        &kp ESCAPE   &none   &none            &none            &none             &none                                 &none   &none                                                           &none   &none            &msc SCRL_UP     &none             &mo MOUSE_JUMP_LAYER   &kp RETURN
+        &none        &none   &none            &none            &none                             &mt T_LL   &mt T_LR   &none   &none   &_t_r LEFT_ALT ESC   &_t_r LEFT_CONTROL SPACE                   &msc SCRL_LEFT   &msc SCRL_DOWN   &msc SCRL_RIGHT   &none                  &none
       >;
     };
     MOUSE_JUMP_LAYER {
