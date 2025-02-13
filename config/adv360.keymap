@@ -617,11 +617,17 @@
       flavor = "balanced";
       bindings = <&mo>, <&to_mouse_layer_macro>;
     };
-    tap_dance_mouse: tap_dance_mouse {
+    tap_dance_mouse_for_default: tap_dance_mouse_for_default {
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&to_default_layer_macro>, <&to_default_layer_macro>;
+      bindings = <&_mouse>, <&to_default_layer_macro>;
+    };
+      tap_dance_mouse_for_mouse: tap_dance_mouse_for_mouse {
+      compatible = "zmk,behavior-tap-dance";
+      #binding-cells = <0>;
+      tapping-term-ms = <200>;
+      bindings = <&to_mouse_layer_macro>, <&to_default_layer_macro>;
     };
     _layer: _layer {
       compatible = "zmk,behavior-hold-tap";
@@ -645,11 +651,11 @@
 
     DEFAULT_LAYER {
       bindings = <
-        &none        &none   &none                             &none                             &none                        &bt BT_CLR   &bootloader                                                                                         &bootloader   &bt BT_CLR   &none    &none    &none     &none      &none
-        &kp X_QQ     &_q     &_w                               &_e                               &_r                          &_t          &none                                                                                               &none         &_y          &_u      &_i      &_o       &_p        &kp X_PP
-        &kp SPACE    &_a     &_s                               &_d                               &_f                          &_g          &none                    &none      &none   &none   &none                                           &none         &_h          &_j      &_k      &_l       &_mouse    &kp BACKSPACE
-        &kp ESCAPE   &_z     &_x                               &_c                               &_v                          &_b                                              &none   &none                                                                 &_n          &_m      &_up     &_tab     &_delete   &kp RETURN
-        &none        &none   &_layer SYMBOL2_LAYER X_LH_SYM2   &_layer SYMBOL1_LAYER X_LH_SYM1   &_layer NUM_LAYER X_LH_NUM                              &mt T_LL   &mt T_LR   &none   &none   &_t_r LEFT_ALT ESC   &_t_r LEFT_CONTROL SPACE                              &_left   &_down   &_right   &none      &none
+        &none        &none   &none                             &none                             &none                        &bt BT_CLR   &bootloader                                                                                         &bootloader   &bt BT_CLR   &none    &none    &none     &none               &none
+        &kp X_QQ     &_q     &_w                               &_e                               &_r                          &_t          &none                                                                                               &none         &_y          &_u      &_i      &_o       &_p                 &kp X_PP
+        &kp SPACE    &_a     &_s                               &_d                               &_f                          &_g          &none                    &none      &none   &none   &none                                           &none         &_h          &_j      &_k      &_l       &tap_dance_mouse_for_default   &kp BACKSPACE
+        &kp ESCAPE   &_z     &_x                               &_c                               &_v                          &_b                                              &none   &none                                                                 &_n          &_m      &_up     &_tab     &_delete            &kp RETURN
+        &none        &none   &_layer SYMBOL2_LAYER X_LH_SYM2   &_layer SYMBOL1_LAYER X_LH_SYM1   &_layer NUM_LAYER X_LH_NUM                              &mt T_LL   &mt T_LR   &none   &none   &_t_r LEFT_ALT ESC   &_t_r LEFT_CONTROL SPACE                              &_left   &_down   &_right   &none               &none
       >;
     };
     NUM_LAYER {
@@ -746,7 +752,7 @@
       bindings = <
         &none        &none   &none            &none            &none             &none   &none                                                                                         &none   &none   &none            &none            &none             &none                  &none
         &none        &none   &none            &mmv MOVE_UP     &none             &none   &none                                                                                         &none   &none   &none            &none            &none             &none                  &none
-        &kp SPACE    &none   &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &none   &none              &none      &none   &none   &none                                           &none   &none   &mkp MB1         &mkp MB2         &mkp MB3          &tap_dance_mouse       &kp BACKSPACE
+        &kp SPACE    &none   &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &none   &none              &none      &none   &none   &none                                           &none   &none   &mkp MB1         &mkp MB2         &mkp MB3          &tap_dance_mouse_for_mouse       &kp BACKSPACE
         &kp ESCAPE   &none   &none            &none            &none             &none                                 &none   &none                                                           &none   &none            &msc SCRL_UP     &none             &mo MOUSE_JUMP_LAYER   &kp RETURN
         &none        &none   &none            &none            &none                             &mt T_LL   &mt T_LR   &none   &none   &_t_r LEFT_ALT ESC   &_t_r LEFT_CONTROL SPACE                   &msc SCRL_LEFT   &msc SCRL_DOWN   &msc SCRL_RIGHT   &none                  &none
       >;
