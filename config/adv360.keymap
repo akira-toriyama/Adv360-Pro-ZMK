@@ -249,21 +249,29 @@
 #define X_DOWN_ARROW_B RG(RA(PAUSE_BREAK))
 
 // MOUSE_JUMP_LAYER: SHIFT, COMMAND, ALT
-#define X_MOUSE_JUMP_Q RS(RG(RA(F13)))
-#define X_MOUSE_JUMP_W RS(RG(RA(F14)))
-#define X_MOUSE_JUMP_E RS(RG(RA(F15)))
-#define X_MOUSE_JUMP_R RS(RG(RA(F16)))
-#define X_MOUSE_JUMP_T RS(RG(RA(F17)))
-#define X_MOUSE_JUMP_A RS(RG(RA(F18)))
-#define X_MOUSE_JUMP_S RS(RG(RA(F19)))
-#define X_MOUSE_JUMP_D RS(RG(RA(F20)))
-#define X_MOUSE_JUMP_F RS(RG(RA(F21)))
-#define X_MOUSE_JUMP_G RS(RG(RA(F22)))
-#define X_MOUSE_JUMP_Z RS(RG(RA(F23)))
-#define X_MOUSE_JUMP_X RS(RG(RA(F24)))
-#define X_MOUSE_JUMP_C RS(RG(RA(NON_US_HASH)))
-#define X_MOUSE_JUMP_V RS(RG(RA(PRINTSCREEN)))
-#define X_MOUSE_JUMP_B RS(RG(RA(PAUSE_BREAK)))
+#define X_MOUSE_JUMP_AA RA(RS(RG(NON_US_BACKSLASH)))
+#define X_MOUSE_JUMP_ZZ RA(RS(RG(K_APPLICATION)))
+#define X_MOUSE_JUMP_QQ RA(RS(RG(LANGUAGE_5)))
+#define X_MOUSE_JUMP_NUM RA(RS(RG(LANGUAGE_6)))
+#define X_MOUSE_JUMP_SYM1 RA(RS(RG(LANGUAGE_7)))
+#define X_MOUSE_JUMP_SYM2 RA(RS(RG(LANGUAGE_8)))
+#define X_MOUSE_JUMP_T_LL RA(RS(RG(INSERT)))
+#define X_MOUSE_JUMP_T_LR RA(RS(RG(KP_ENTER)))
+#define X_MOUSE_JUMP_Q RA(RS(RG(F13)))
+#define X_MOUSE_JUMP_W RA(RS(RG(F14)))
+#define X_MOUSE_JUMP_E RA(RS(RG(F15)))
+#define X_MOUSE_JUMP_R RA(RS(RG(F16)))
+#define X_MOUSE_JUMP_T RA(RS(RG(F17)))
+#define X_MOUSE_JUMP_A RA(RS(RG(F18)))
+#define X_MOUSE_JUMP_S RA(RS(RG(F19)))
+#define X_MOUSE_JUMP_D RA(RS(RG(F20)))
+#define X_MOUSE_JUMP_F RA(RS(RG(F21)))
+#define X_MOUSE_JUMP_G RA(RS(RG(F22)))
+#define X_MOUSE_JUMP_Z RA(RS(RG(F23)))
+#define X_MOUSE_JUMP_X RA(RS(RG(F24)))
+#define X_MOUSE_JUMP_C RA(RS(RG(NON_US_HASH)))
+#define X_MOUSE_JUMP_V RA(RS(RG(PRINTSCREEN)))
+#define X_MOUSE_JUMP_B RA(RS(RG(PAUSE_BREAK)))
 
 // ------------------------------------
 // https://github.com/zmkfirmware/zmk/pull/1811
@@ -292,18 +300,31 @@
       bindings = <&macro_tap &kp X_SOUND_1>, <&macro_tap &to MOUSE_LAYER>;
     };
 
-    // レイヤー移動で効果音を鳴らす
-    to_default_layer_macro: to_default_layer_macro {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings = <&macro_tap &kp X_SOUND_2>, <&macro_tap &to DEFAULT_LAYER>;
-    };
-
+    // // レイヤー移動で効果音を鳴らす
+    // to_default_layer_macro: to_default_layer_macro {
+    // compatible = "zmk,behavior-macro";
+    // #binding-cells = <0>;
+    // bindings = <&macro_tap &kp X_SOUND_2>, <&macro_tap &to DEFAULT_LAYER>;
+    // };
     // 英語入力に切り替える
     eiji_macro: eiji_macro {
       compatible = "zmk,behavior-macro-one-param";
       #binding-cells = <1>;
       bindings = <&macro_tap &kp EIJI>, <&macro_param_1to1>, <&macro_press &kp MACRO_PLACEHOLDER>, <&macro_pause_for_release>, <&macro_param_1to1>, <&macro_release &kp MACRO_PLACEHOLDER>;
+    };
+
+    // マウスから戻る
+    kana: kana {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&kp KANA>, <&macro_tap &to DEFAULT_LAYER>;
+    };
+
+    // マウスから戻る
+    eiji: eiji {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&kp EIJI>, <&macro_tap &to DEFAULT_LAYER>;
     };
   };
   behaviors {
@@ -312,14 +333,14 @@
       #binding-cells = <2>;
       tapping-term-ms = <200>;
       flavor = "hold-preferred";
-      bindings = <&kp>, <&kp>;
+      bindings = <&kp>, <&kana>;
     };
     ime_eiji: ime_eiji {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       tapping-term-ms = <200>;
       flavor = "hold-preferred";
-      bindings = <&kp>, <&kp>;
+      bindings = <&kp>, <&eiji>;
     };
 
     // comboから呼ばれる
@@ -617,18 +638,6 @@
       flavor = "balanced";
       bindings = <&mo>, <&to_mouse_layer_macro>;
     };
-    tap_dance_mouse_for_default: tap_dance_mouse_for_default {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&_mouse>, <&to_default_layer_macro>;
-    };
-      tap_dance_mouse_for_mouse: tap_dance_mouse_for_mouse {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&to_mouse_layer_macro>, <&to_default_layer_macro>;
-    };
     _layer: _layer {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
@@ -651,11 +660,11 @@
 
     DEFAULT_LAYER {
       bindings = <
-        &none        &none   &none                             &none                             &none                        &bt BT_CLR   &bootloader                                                                                         &bootloader   &bt BT_CLR   &none    &none    &none     &none               &none
-        &kp X_QQ     &_q     &_w                               &_e                               &_r                          &_t          &none                                                                                               &none         &_y          &_u      &_i      &_o       &_p                 &kp X_PP
-        &kp SPACE    &_a     &_s                               &_d                               &_f                          &_g          &none                    &none      &none   &none   &none                                           &none         &_h          &_j      &_k      &_l       &tap_dance_mouse_for_default   &kp BACKSPACE
-        &kp ESCAPE   &_z     &_x                               &_c                               &_v                          &_b                                              &none   &none                                                                 &_n          &_m      &_up     &_tab     &_delete            &kp RETURN
-        &none        &none   &_layer SYMBOL2_LAYER X_LH_SYM2   &_layer SYMBOL1_LAYER X_LH_SYM1   &_layer NUM_LAYER X_LH_NUM                              &mt T_LL   &mt T_LR   &none   &none   &_t_r LEFT_ALT ESC   &_t_r LEFT_CONTROL SPACE                              &_left   &_down   &_right   &none               &none
+        &none        &none   &none                             &none                             &none                        &bt BT_CLR   &bootloader                                                                                         &bootloader   &bt BT_CLR   &none    &none    &none     &none      &none
+        &kp X_QQ     &_q     &_w                               &_e                               &_r                          &_t          &none                                                                                               &none         &_y          &_u      &_i      &_o       &_p        &kp X_PP
+        &kp SPACE    &_a     &_s                               &_d                               &_f                          &_g          &none                    &none      &none   &none   &none                                           &none         &_h          &_j      &_k      &_l       &_mouse    &kp BACKSPACE
+        &kp ESCAPE   &_z     &_x                               &_c                               &_v                          &_b                                              &none   &none                                                                 &_n          &_m      &_up     &_tab     &_delete   &kp RETURN
+        &none        &none   &_layer SYMBOL2_LAYER X_LH_SYM2   &_layer SYMBOL1_LAYER X_LH_SYM1   &_layer NUM_LAYER X_LH_NUM                              &mt T_LL   &mt T_LR   &none   &none   &_t_r LEFT_ALT ESC   &_t_r LEFT_CONTROL SPACE                              &_left   &_down   &_right   &none      &none
       >;
     };
     NUM_LAYER {
@@ -750,20 +759,20 @@
     };
     MOUSE_LAYER {
       bindings = <
-        &none        &none   &none            &none            &none             &none   &none                                                                                         &none   &none   &none            &none            &none             &none                  &none
-        &none        &none   &none            &mmv MOVE_UP     &none             &none   &none                                                                                         &none   &none   &none            &none            &none             &none                  &none
-        &kp SPACE    &none   &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &none   &none              &none      &none   &none   &none                                           &none   &none   &mkp MB1         &mkp MB2         &mkp MB3          &tap_dance_mouse_for_mouse       &kp BACKSPACE
-        &kp ESCAPE   &none   &none            &none            &none             &none                                 &none   &none                                                           &none   &none            &msc SCRL_UP     &none             &mo MOUSE_JUMP_LAYER   &kp RETURN
-        &none        &none   &none            &none            &none                             &mt T_LL   &mt T_LR   &none   &none   &_t_r LEFT_ALT ESC   &_t_r LEFT_CONTROL SPACE                   &msc SCRL_LEFT   &msc SCRL_DOWN   &msc SCRL_RIGHT   &none                  &none
+        &none        &none   &none            &none            &none             &none   &none                                                                                         &none   &none   &none            &none            &none             &none                   &none
+        &none        &none   &none            &mmv MOVE_UP     &none             &none   &none                                                                                         &none   &none   &none            &none            &none             &none                   &none
+        &kp SPACE    &none   &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &none   &none              &none      &none   &none   &none                                           &none   &none   &mkp MB1         &mkp MB2         &mkp MB3          &to_mouse_layer_macro   &kp BACKSPACE
+        &kp ESCAPE   &none   &none            &none            &none             &none                                 &none   &none                                                           &none   &none            &msc SCRL_UP     &none             &mo MOUSE_JUMP_LAYER    &kp RETURN
+        &none        &none   &none            &none            &none                             &mt T_LL   &mt T_LR   &none   &none   &_t_r LEFT_ALT ESC   &_t_r LEFT_CONTROL SPACE                   &msc SCRL_LEFT   &msc SCRL_DOWN   &msc SCRL_RIGHT   &none                   &none
       >;
     };
     MOUSE_JUMP_LAYER {
       bindings = <
-        &none   &none                &none                &none                &none                &none                &none                                                   &none   &none   &none   &none   &none   &none   &none
-        &none   &kp X_MOUSE_JUMP_Q   &kp X_MOUSE_JUMP_W   &kp X_MOUSE_JUMP_E   &kp X_MOUSE_JUMP_R   &kp X_MOUSE_JUMP_T   &none                                                   &none   &none   &none   &none   &none   &none   &none
-        &none   &kp X_MOUSE_JUMP_A   &kp X_MOUSE_JUMP_S   &kp X_MOUSE_JUMP_D   &kp X_MOUSE_JUMP_F   &kp X_MOUSE_JUMP_G   &none           &none   &none   &none   &none           &none   &none   &none   &none   &none   &none   &none
-        &none   &kp X_MOUSE_JUMP_Z   &kp X_MOUSE_JUMP_X   &kp X_MOUSE_JUMP_C   &kp X_MOUSE_JUMP_V   &kp X_MOUSE_JUMP_B                           &none   &none                           &none   &none   &none   &none   &none   &none
-        &none   &none                &none                &none                &none                                             &none   &none   &none   &none   &none   &none                   &none   &none   &none   &none   &none
+        &none                 &none                &none                   &none                   &none                  &none                &none                                                                                   &none   &none   &none   &none   &none   &none   &none
+        &kp X_MOUSE_JUMP_QQ   &kp X_MOUSE_JUMP_Q   &kp X_MOUSE_JUMP_W      &kp X_MOUSE_JUMP_E      &kp X_MOUSE_JUMP_R     &kp X_MOUSE_JUMP_T   &none                                                                                   &none   &none   &none   &none   &none   &none   &none
+        &kp X_MOUSE_JUMP_AA   &kp X_MOUSE_JUMP_A   &kp X_MOUSE_JUMP_S      &kp X_MOUSE_JUMP_D      &kp X_MOUSE_JUMP_F     &kp X_MOUSE_JUMP_G   &none                           &none                   &none   &none   &none           &none   &none   &none   &none   &none   &none   &none
+        &kp X_MOUSE_JUMP_ZZ   &kp X_MOUSE_JUMP_Z   &kp X_MOUSE_JUMP_X      &kp X_MOUSE_JUMP_C      &kp X_MOUSE_JUMP_V     &kp X_MOUSE_JUMP_B                                                           &none   &none                           &none   &none   &none   &none   &none   &none
+        &none                 &none                &kp X_MOUSE_JUMP_SYM2   &kp X_MOUSE_JUMP_SYM1   &kp X_MOUSE_JUMP_NUM                                &kp X_MOUSE_JUMP_T_LL   &kp X_MOUSE_JUMP_T_LR   &none   &none   &none   &none                   &none   &none   &none   &none   &none
       >;
     };
   };
