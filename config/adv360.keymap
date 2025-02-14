@@ -248,31 +248,6 @@
 #define X_DOWN_ARROW_V RG(RA(PRINTSCREEN))
 #define X_DOWN_ARROW_B RG(RA(PAUSE_BREAK))
 
-// MOUSE_JUMP_LAYER: SHIFT, COMMAND, ALT
-#define X_MOUSE_JUMP_AA RA(RS(RG(NON_US_BACKSLASH)))
-#define X_MOUSE_JUMP_ZZ RA(RS(RG(K_APPLICATION)))
-#define X_MOUSE_JUMP_QQ RA(RS(RG(LANGUAGE_5)))
-#define X_MOUSE_JUMP_NUM RA(RS(RG(LANGUAGE_6)))
-#define X_MOUSE_JUMP_SYM1 RA(RS(RG(LANGUAGE_7)))
-#define X_MOUSE_JUMP_SYM2 RA(RS(RG(LANGUAGE_8)))
-#define X_MOUSE_JUMP_T_LL RA(RS(RG(INSERT)))
-#define X_MOUSE_JUMP_T_LR RA(RS(RG(KP_ENTER)))
-#define X_MOUSE_JUMP_Q RA(RS(RG(F13)))
-#define X_MOUSE_JUMP_W RA(RS(RG(F14)))
-#define X_MOUSE_JUMP_E RA(RS(RG(F15)))
-#define X_MOUSE_JUMP_R RA(RS(RG(F16)))
-#define X_MOUSE_JUMP_T RA(RS(RG(F17)))
-#define X_MOUSE_JUMP_A RA(RS(RG(F18)))
-#define X_MOUSE_JUMP_S RA(RS(RG(F19)))
-#define X_MOUSE_JUMP_D RA(RS(RG(F20)))
-#define X_MOUSE_JUMP_F RA(RS(RG(F21)))
-#define X_MOUSE_JUMP_G RA(RS(RG(F22)))
-#define X_MOUSE_JUMP_Z RA(RS(RG(F23)))
-#define X_MOUSE_JUMP_X RA(RS(RG(F24)))
-#define X_MOUSE_JUMP_C RA(RS(RG(NON_US_HASH)))
-#define X_MOUSE_JUMP_V RA(RS(RG(PRINTSCREEN)))
-#define X_MOUSE_JUMP_B RA(RS(RG(PAUSE_BREAK)))
-
 // ------------------------------------
 // https://github.com/zmkfirmware/zmk/pull/1811
 &mt {
@@ -325,6 +300,13 @@
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       bindings = <&kp EIJI>, <&macro_tap &to DEFAULT_LAYER>;
+    };
+
+    // マウスのカーソルをジャンプして マウスレイヤーに切り替え
+    jmp: mouse_pointer_jump {
+      #binding-cells = <1>;
+      compatible = "zmk,behavior-macro-one-param";
+      bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER>, <&to MOUSE_LAYER>;
     };
   };
   behaviors {
@@ -741,11 +723,11 @@
     };
     UP_ARROW_LAYER {
       bindings = <
-        &none               &none              &none                 &none                 &none                &none              &none                                                                               &none   &none   &none         &none   &none   &none   &none
-        &kp X_UP_ARROW_QQ   &kp X_UP_ARROW_Q   &kp X_UP_ARROW_W      &kp X_UP_ARROW_E      &kp X_UP_ARROW_R     &kp X_UP_ARROW_T   &none                                                                               &none   &none   &none         &none   &none   &none   &none
-        &kp X_UP_ARROW_AA   &kp X_UP_ARROW_A   &kp X_UP_ARROW_S      &kp X_UP_ARROW_D      &kp X_UP_ARROW_F     &kp X_UP_ARROW_G   &none                         &none                 &none   &none   &none           &none   &none   &none         &none   &none   &none   &none
-        &kp X_UP_ARROW_ZZ   &kp X_UP_ARROW_Z   &kp X_UP_ARROW_X      &kp X_UP_ARROW_C      &kp X_UP_ARROW_V     &kp X_UP_ARROW_B                                                       &none   &none                           &none   &none         &none   &none   &none   &none
-        &none               &none              &kp X_UP_ARROW_SYM2   &kp X_UP_ARROW_SYM1   &kp X_UP_ARROW_NUM                              &kp X_UP_ARROW_T_LL   &kp X_UP_ARROW_T_LR   &none   &none   &none   &none                   &kp PAGE_UP   &none   &none   &none   &none
+        &none                &none               &none                  &none                  &none                 &none               &none                                                                                 &none   &none   &none          &none   &none   &none   &none
+        &jmp X_UP_ARROW_QQ   &jmp X_UP_ARROW_Q   &jmp X_UP_ARROW_W      &jmp X_UP_ARROW_E      &jmp X_UP_ARROW_R     &jmp X_UP_ARROW_T   &none                                                                                 &none   &none   &none          &none   &none   &none   &none
+        &jmp X_UP_ARROW_AA   &jmp X_UP_ARROW_A   &jmp X_UP_ARROW_S      &jmp X_UP_ARROW_D      &jmp X_UP_ARROW_F     &jmp X_UP_ARROW_G   &none                          &none                  &none   &none   &none           &none   &none   &none          &none   &none   &none   &none
+        &jmp X_UP_ARROW_ZZ   &jmp X_UP_ARROW_Z   &jmp X_UP_ARROW_X      &jmp X_UP_ARROW_C      &jmp X_UP_ARROW_V     &jmp X_UP_ARROW_B                                                         &none   &none                           &none   &none          &none   &none   &none   &none
+        &none                &none               &jmp X_UP_ARROW_SYM2   &jmp X_UP_ARROW_SYM1   &jmp X_UP_ARROW_NUM                               &jmp X_UP_ARROW_T_LL   &jmp X_UP_ARROW_T_LR   &none   &none   &none   &none                   &jmp PAGE_UP   &none   &none   &none   &none
       >;
     };
     DOWN_ARROW_LAYER {
@@ -762,17 +744,8 @@
         &none        &none   &none            &none            &none             &none   &none                                                                                         &none   &none   &none            &none            &none             &none                   &none
         &none        &none   &none            &mmv MOVE_UP     &none             &none   &none                                                                                         &none   &none   &none            &none            &none             &none                   &none
         &kp SPACE    &none   &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &none   &none              &none      &none   &none   &none                                           &none   &none   &mkp MB1         &mkp MB2         &mkp MB3          &to_mouse_layer_macro   &kp BACKSPACE
-        &kp ESCAPE   &none   &none            &none            &none             &none                                 &none   &none                                                           &none   &none            &msc SCRL_UP     &none             &mo MOUSE_JUMP_LAYER    &kp RETURN
+        &kp ESCAPE   &none   &none            &none            &none             &none                                 &none   &none                                                           &none   &none            &msc SCRL_UP     &none             &none                   &kp RETURN
         &none        &none   &none            &none            &none                             &mt T_LL   &mt T_LR   &none   &none   &_t_r LEFT_ALT ESC   &_t_r LEFT_CONTROL SPACE                   &msc SCRL_LEFT   &msc SCRL_DOWN   &msc SCRL_RIGHT   &none                   &none
-      >;
-    };
-    MOUSE_JUMP_LAYER {
-      bindings = <
-        &none                 &none                &none                   &none                   &none                  &none                &none                                                                                   &none   &none   &none   &none   &none   &none   &none
-        &kp X_MOUSE_JUMP_QQ   &kp X_MOUSE_JUMP_Q   &kp X_MOUSE_JUMP_W      &kp X_MOUSE_JUMP_E      &kp X_MOUSE_JUMP_R     &kp X_MOUSE_JUMP_T   &none                                                                                   &none   &none   &none   &none   &none   &none   &none
-        &kp X_MOUSE_JUMP_AA   &kp X_MOUSE_JUMP_A   &kp X_MOUSE_JUMP_S      &kp X_MOUSE_JUMP_D      &kp X_MOUSE_JUMP_F     &kp X_MOUSE_JUMP_G   &none                           &none                   &none   &none   &none           &none   &none   &none   &none   &none   &none   &none
-        &kp X_MOUSE_JUMP_ZZ   &kp X_MOUSE_JUMP_Z   &kp X_MOUSE_JUMP_X      &kp X_MOUSE_JUMP_C      &kp X_MOUSE_JUMP_V     &kp X_MOUSE_JUMP_B                                                           &none   &none                           &none   &none   &none   &none   &none   &none
-        &none                 &none                &kp X_MOUSE_JUMP_SYM2   &kp X_MOUSE_JUMP_SYM1   &kp X_MOUSE_JUMP_NUM                                &kp X_MOUSE_JUMP_T_LL   &kp X_MOUSE_JUMP_T_LR   &none   &none   &none   &none                   &none   &none   &none   &none   &none
       >;
     };
   };
