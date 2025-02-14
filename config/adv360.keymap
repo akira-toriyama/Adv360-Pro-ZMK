@@ -605,21 +605,6 @@
       bindings = <&mo>, <&kp>;
       hold-trigger-key-positions = <KEY_POSITION_LEFT_SIDE KEY_POSITION_L_THUMB>;
     };
-    _mouse: _mouse {
-      compatible = "zmk,behavior-mod-morph";
-      #binding-cells = <0>;
-      bindings = <&__mouse LL_LAYER MOUSE_LAYER>, <&kp X_LL_LL>;
-      mods = <( MOD_LGUI|MOD_LSFT|MOD_LCTL|MOD_LALT )>;
-      keep-mods = <( MOD_LGUI|MOD_LSFT|MOD_LCTL|MOD_LALT )>;
-    };
-    __mouse: __mouse {
-      compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <2>;
-      tapping-term-ms = <200>;
-      quick-tap-ms = <0>;
-      flavor = "balanced";
-      bindings = <&mo>, <&to_mouse_layer_macro>;
-    };
     _layer: _layer {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
@@ -642,11 +627,11 @@
 
     DEFAULT_LAYER {
       bindings = <
-        &none        &none   &none                             &none                             &none                        &bt BT_CLR   &bootloader                                                                                         &bootloader   &bt BT_CLR   &none    &none    &none     &none      &none
-        &kp X_QQ     &_q     &_w                               &_e                               &_r                          &_t          &none                                                                                               &none         &_y          &_u      &_i      &_o       &_p        &kp X_PP
-        &kp SPACE    &_a     &_s                               &_d                               &_f                          &_g          &none                    &none      &none   &none   &none                                           &none         &_h          &_j      &_k      &_l       &_mouse    &kp BACKSPACE
-        &kp ESCAPE   &_z     &_x                               &_c                               &_v                          &_b                                              &none   &none                                                                 &_n          &_m      &_up     &_tab     &_delete   &kp RETURN
-        &none        &none   &_layer SYMBOL2_LAYER X_LH_SYM2   &_layer SYMBOL1_LAYER X_LH_SYM1   &_layer NUM_LAYER X_LH_NUM                              &mt T_LL   &mt T_LR   &none   &none   &_t_r LEFT_ALT ESC   &_t_r LEFT_CONTROL SPACE                              &_left   &_down   &_right   &none      &none
+        &none        &none   &none                             &none                             &none                        &bt BT_CLR   &bootloader                                                                                         &bootloader   &bt BT_CLR   &none    &none    &none     &none                  &none
+        &kp X_QQ     &_q     &_w                               &_e                               &_r                          &_t          &none                                                                                               &none         &_y          &_u      &_i      &_o       &_p                    &kp X_PP
+        &kp SPACE    &_a     &_s                               &_d                               &_f                          &_g          &none                    &none      &none   &none   &none                                           &none         &_h          &_j      &_k      &_l       &lt LL_LAYER X_LL_LL   &kp BACKSPACE
+        &kp ESCAPE   &_z     &_x                               &_c                               &_v                          &_b                                              &none   &none                                                                 &_n          &_m      &_up     &_tab     &_delete               &kp RETURN
+        &none        &none   &_layer SYMBOL2_LAYER X_LH_SYM2   &_layer SYMBOL1_LAYER X_LH_SYM1   &_layer NUM_LAYER X_LH_NUM                              &mt T_LL   &mt T_LR   &none   &none   &_t_r LEFT_ALT ESC   &_t_r LEFT_CONTROL SPACE                              &_left   &_down   &_right   &none                  &none
       >;
     };
     NUM_LAYER {
@@ -741,11 +726,11 @@
     };
     MOUSE_LAYER {
       bindings = <
-        &none        &none   &none            &none            &none             &none   &none                                                                                         &none   &none   &none            &none            &none             &none                   &none
-        &none        &none   &none            &mmv MOVE_UP     &none             &none   &none                                                                                         &none   &none   &none            &none            &none             &none                   &none
-        &kp SPACE    &none   &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &none   &none              &none      &none   &none   &none                                           &none   &none   &mkp MB1         &mkp MB2         &mkp MB3          &to_mouse_layer_macro   &kp BACKSPACE
-        &kp ESCAPE   &none   &none            &none            &none             &none                                 &none   &none                                                           &none   &none            &msc SCRL_UP     &none             &none                   &kp RETURN
-        &none        &none   &none            &none            &none                             &mt T_LL   &mt T_LR   &none   &none   &_t_r LEFT_ALT ESC   &_t_r LEFT_CONTROL SPACE                   &msc SCRL_LEFT   &msc SCRL_DOWN   &msc SCRL_RIGHT   &none                   &none
+        &none        &none   &none            &none            &none             &none   &none                                                                                         &none   &none   &none            &none            &none             &none   &none
+        &none        &none   &none            &mmv MOVE_UP     &none             &none   &none                                                                                         &none   &none   &none            &none            &none             &none   &none
+        &kp SPACE    &none   &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &none   &none              &none      &none   &none   &none                                           &none   &none   &mkp MB1         &mkp MB2         &mkp MB3          &none   &kp BACKSPACE
+        &kp ESCAPE   &none   &none            &none            &none             &none                                 &none   &none                                                           &none   &none            &msc SCRL_UP     &none             &none   &kp RETURN
+        &none        &none   &none            &none            &none                             &mt T_LL   &mt T_LR   &none   &none   &_t_r LEFT_ALT ESC   &_t_r LEFT_CONTROL SPACE                   &msc SCRL_LEFT   &msc SCRL_DOWN   &msc SCRL_RIGHT   &none   &none
       >;
     };
   };
