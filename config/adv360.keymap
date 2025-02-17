@@ -20,7 +20,6 @@
 #define UP_ARROW_LAYER 9
 #define DOWN_ARROW_LAYER 10
 #define MOUSE_LAYER 11
-#define MOUSE_JUMP_LAYER 12
 
 // ------------------------------------
 // エイリアス
@@ -257,6 +256,16 @@
   combos {
     compatible = "zmk,combos";
 
+    combo_kana_to_default_layer {
+      key-positions = <KEY_POSITION_LL KEY_POSITION_LR>;
+      bindings = <&to_default_layer_macro KANA>;
+      layers = <MOUSE_LAYER>;
+    };
+    combo_eiji_to_default_layer {
+      key-positions = <KEY_POSITION_RL KEY_POSITION_RR>;
+      bindings = <&to_default_layer_macro EIJI>;
+      layers = <MOUSE_LAYER>;
+    };
     combo_kana {
       key-positions = <KEY_POSITION_LL KEY_POSITION_LR>;
       bindings = <&ime_kana LS(LEFT_COMMAND) KANA>;
@@ -275,38 +284,35 @@
       bindings = <&macro_tap &kp X_SOUND_1>, <&macro_tap &to MOUSE_LAYER>;
     };
 
-    // // レイヤー移動で効果音を鳴らす
-    // to_default_layer_macro: to_default_layer_macro {
-    // compatible = "zmk,behavior-macro";
-    // #binding-cells = <0>;
-    // bindings = <&macro_tap &kp X_SOUND_2>, <&macro_tap &to DEFAULT_LAYER>;
-    // };
+    // レイヤー移動で効果音を鳴らす
+    to_default_layer_macro: to_default_layer_macro {
+      compatible = "zmk,behavior-macro-one-param";
+      #binding-cells = <1>;
+      bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER>, <&macro_tap &kp X_SOUND_2>, <&macro_tap &to DEFAULT_LAYER>;
+    };
+
     // 英語入力に切り替える
     eiji_macro: eiji_macro {
       compatible = "zmk,behavior-macro-one-param";
       #binding-cells = <1>;
       bindings = <&macro_tap &kp EIJI>, <&macro_param_1to1>, <&macro_press &kp MACRO_PLACEHOLDER>, <&macro_pause_for_release>, <&macro_param_1to1>, <&macro_release &kp MACRO_PLACEHOLDER>;
     };
-
-    // マウスから戻る
     kana: kana {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
-      bindings = <&kp KANA>, <&macro_tap &to DEFAULT_LAYER>;
+      bindings = <&kp KANA>;
     };
-
-    // マウスから戻る
     eiji: eiji {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
-      bindings = <&kp EIJI>, <&macro_tap &to DEFAULT_LAYER>;
+      bindings = <&kp EIJI>;
     };
 
     // マウスのカーソルをジャンプして マウスレイヤーに切り替え
     jmp: mouse_pointer_jump {
-      #binding-cells = <1>;
       compatible = "zmk,behavior-macro-one-param";
-      bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER>, <&to MOUSE_LAYER>;
+      #binding-cells = <1>;
+      bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER>, <&to_mouse_layer_macro>;
     };
   };
   behaviors {
