@@ -687,11 +687,11 @@
     };
     DELETE_LAYER {
       bindings = <
-        &none             &none            &none               &none               &none              &none            &none                                                                           &none   &none   &none   &none   &none   &none   &none
-        &kp X_DELETE_QQ   &kp X_DELETE_Q   &kp X_DELETE_W      &kp X_DELETE_E      &kp X_DELETE_R     &kp X_DELETE_T   &none                                                                           &none   &none   &none   &none   &none   &none   &none
-        &kp X_DELETE_AA   &kp X_DELETE_A   &kp X_DELETE_S      &kp X_DELETE_D      &kp X_DELETE_F     &kp X_DELETE_G   &none                       &none               &none   &none   &none           &none   &none   &none   &none   &none   &none   &none
-        &kp X_DELETE_ZZ   &kp X_DELETE_Z   &kp X_DELETE_X      &kp X_DELETE_C      &kp X_DELETE_V     &kp X_DELETE_B                                                   &none   &none                           &none   &none   &none   &none   &none   &none
-        &none             &none            &kp X_DELETE_SYM2   &kp X_DELETE_SYM1   &kp X_DELETE_NUM                            &kp X_DELETE_T_LL   &kp X_DELETE_T_LR   &none   &none   &none   &none                   &none   &none   &none   &none   &none
+        &none              &none             &none                &none                &none               &none             &none                                                                             &none   &none   &none   &none   &none   &none   &none
+        &jmp X_DELETE_QQ   &jmp X_DELETE_Q   &jmp X_DELETE_W      &jmp X_DELETE_E      &jmp X_DELETE_R     &jmp X_DELETE_T   &none                                                                             &none   &none   &none   &none   &none   &none   &none
+        &jmp X_DELETE_AA   &jmp X_DELETE_A   &jmp X_DELETE_S      &jmp X_DELETE_D      &jmp X_DELETE_F     &jmp X_DELETE_G   &none                        &none                &none   &none   &none           &none   &none   &none   &none   &none   &none   &none
+        &jmp X_DELETE_ZZ   &jmp X_DELETE_Z   &jmp X_DELETE_X      &jmp X_DELETE_C      &jmp X_DELETE_V     &jmp X_DELETE_B                                                     &none   &none                           &none   &none   &none   &none   &none   &none
+        &none              &none             &jmp X_DELETE_SYM2   &jmp X_DELETE_SYM1   &jmp X_DELETE_NUM                             &jmp X_DELETE_T_LL   &jmp X_DELETE_T_LR   &none   &none   &none   &none                   &none   &none   &none   &none   &none
       >;
     };
     LEFT_ARROW_LAYER {
@@ -714,11 +714,11 @@
     };
     UP_ARROW_LAYER {
       bindings = <
-        &none                &none               &none                  &none                  &none                 &none               &none                                                                                 &none   &none   &none          &none   &none   &none   &none
-        &jmp X_UP_ARROW_QQ   &jmp X_UP_ARROW_Q   &jmp X_UP_ARROW_W      &jmp X_UP_ARROW_E      &jmp X_UP_ARROW_R     &jmp X_UP_ARROW_T   &none                                                                                 &none   &none   &none          &none   &none   &none   &none
-        &jmp X_UP_ARROW_AA   &jmp X_UP_ARROW_A   &jmp X_UP_ARROW_S      &jmp X_UP_ARROW_D      &jmp X_UP_ARROW_F     &jmp X_UP_ARROW_G   &none                          &none                  &none   &none   &none           &none   &none   &none          &none   &none   &none   &none
-        &jmp X_UP_ARROW_ZZ   &jmp X_UP_ARROW_Z   &jmp X_UP_ARROW_X      &jmp X_UP_ARROW_C      &jmp X_UP_ARROW_V     &jmp X_UP_ARROW_B                                                         &none   &none                           &none   &none          &none   &none   &none   &none
-        &none                &none               &jmp X_UP_ARROW_SYM2   &jmp X_UP_ARROW_SYM1   &jmp X_UP_ARROW_NUM                               &jmp X_UP_ARROW_T_LL   &jmp X_UP_ARROW_T_LR   &none   &none   &none   &none                   &jmp PAGE_UP   &none   &none   &none   &none
+        &none               &none              &none                 &none                 &none                &none              &none                                                                               &none   &none   &none         &none   &none   &none   &none
+        &kp X_UP_ARROW_QQ   &kp X_UP_ARROW_Q   &kp X_UP_ARROW_W      &kp X_UP_ARROW_E      &kp X_UP_ARROW_R     &kp X_UP_ARROW_T   &none                                                                               &none   &none   &none         &none   &none   &none   &none
+        &kp X_UP_ARROW_AA   &kp X_UP_ARROW_A   &kp X_UP_ARROW_S      &kp X_UP_ARROW_D      &kp X_UP_ARROW_F     &kp X_UP_ARROW_G   &none                         &none                 &none   &none   &none           &none   &none   &none         &none   &none   &none   &none
+        &kp X_UP_ARROW_ZZ   &kp X_UP_ARROW_Z   &kp X_UP_ARROW_X      &kp X_UP_ARROW_C      &kp X_UP_ARROW_V     &kp X_UP_ARROW_B                                                       &none   &none                           &none   &none         &none   &none   &none   &none
+        &none               &none              &kp X_UP_ARROW_SYM2   &kp X_UP_ARROW_SYM1   &kp X_UP_ARROW_NUM                              &kp X_UP_ARROW_T_LL   &kp X_UP_ARROW_T_LR   &none   &none   &none   &none                   &kp PAGE_UP   &none   &none   &none   &none
       >;
     };
     DOWN_ARROW_LAYER {
