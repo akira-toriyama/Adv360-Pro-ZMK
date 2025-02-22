@@ -1,3 +1,4 @@
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
@@ -251,6 +252,10 @@
 // https://github.com/zmkfirmware/zmk/pull/1811
 &mt {
   hold-while-undecided;
+};
+&msc {
+  acceleration-exponent = <0>;
+  time-to-max-speed-ms = <300>;
 };
 / {
   combos {
