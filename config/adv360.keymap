@@ -148,31 +148,6 @@
 #define X_DELETE_V RS(RG(PRINTSCREEN))
 #define X_DELETE_B RS(RG(PAUSE_BREAK))
 
-// DELETE(double): ALT, SHIFT, COMMAND
-#define X_DELETE_W_AA RA(RS(RG(NON_US_BACKSLASH)))
-#define X_DELETE_W_ZZ RA(RS(RG(K_APPLICATION)))
-#define X_DELETE_W_QQ RA(RS(RG(LANGUAGE_5)))
-#define X_DELETE_W_NUM RA(RS(RG(LANGUAGE_6)))
-#define X_DELETE_W_SYM1 RA(RS(RG(LANGUAGE_7)))
-#define X_DELETE_W_SYM2 RA(RS(RG(LANGUAGE_8)))
-#define X_DELETE_W_T_LL RA(RS(RG(INSERT)))
-#define X_DELETE_W_T_LR RA(RS(RG(KP_ENTER)))
-#define X_DELETE_W_Q RA(RS(RG(F13)))
-#define X_DELETE_W_W RA(RS(RG(F14)))
-#define X_DELETE_W_E RA(RS(RG(F15)))
-#define X_DELETE_W_R RA(RS(RG(F16)))
-#define X_DELETE_W_T RA(RS(RG(F17)))
-#define X_DELETE_W_A RA(RS(RG(F18)))
-#define X_DELETE_W_S RA(RS(RG(F19)))
-#define X_DELETE_W_D RA(RS(RG(F20)))
-#define X_DELETE_W_F RA(RS(RG(F21)))
-#define X_DELETE_W_G RA(RS(RG(F22)))
-#define X_DELETE_W_Z RA(RS(RG(F23)))
-#define X_DELETE_W_X RA(RS(RG(F24)))
-#define X_DELETE_W_C RA(RS(RG(NON_US_HASH)))
-#define X_DELETE_W_V RA(RS(RG(PRINTSCREEN)))
-#define X_DELETE_W_B RA(RS(RG(PAUSE_BREAK)))
-
 // LEFT_ARROW: ALT, CTRL
 #define X_LEFT_ARROW_AA RA(RC(NON_US_BACKSLASH))
 #define X_LEFT_ARROW_ZZ RA(RC(K_APPLICATION))
@@ -662,144 +637,6 @@
       flavor = "hold-preferred";
       bindings = <&kp>, <&kp>;
     };
-    td_delete_qq: tap_dance_delete_qq {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&jmp X_DELETE_QQ>, <&jmp X_DELETE_W_QQ>;
-    };
-    td_delete_q: tap_dance_delete_q {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&jmp X_DELETE_Q>, <&jmp X_DELETE_W_Q>;
-    };
-    td_delete_w: tap_dance_delete_w {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&jmp X_DELETE_W>, <&jmp X_DELETE_W_W>;
-    };
-    td_delete_e: tap_dance_delete_e {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&jmp X_DELETE_E>, <&jmp X_DELETE_W_E>;
-    };
-    td_delete_r: tap_dance_delete_r {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&jmp X_DELETE_R>, <&jmp X_DELETE_W_R>;
-    };
-    td_delete_t: tap_dance_delete_t {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&jmp X_DELETE_T>, <&jmp X_DELETE_W_T>;
-    };
-    td_delete_aa: tap_dance_delete_aa {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&jmp X_DELETE_AA>, <&jmp X_DELETE_W_AA>;
-    };
-    td_delete_a: tap_dance_delete_a {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&jmp X_DELETE_A>, <&jmp X_DELETE_W_A>;
-    };
-    td_delete_s: tap_dance_delete_s {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&jmp X_DELETE_S>, <&jmp X_DELETE_W_S>;
-    };
-    td_delete_d: tap_dance_delete_d {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&jmp X_DELETE_D>, <&jmp X_DELETE_W_D>;
-    };
-    td_delete_f: tap_dance_delete_f {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&jmp X_DELETE_F>, <&jmp X_DELETE_W_F>;
-    };
-    td_delete_g: tap_dance_delete_g {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&jmp X_DELETE_G>, <&jmp X_DELETE_W_G>;
-    };
-    td_delete_zz: tap_dance_delete_zz {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&jmp X_DELETE_ZZ>, <&jmp X_DELETE_W_ZZ>;
-    };
-    td_delete_z: tap_dance_delete_z {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&jmp X_DELETE_Z>, <&jmp X_DELETE_W_Z>;
-    };
-    td_delete_x: tap_dance_delete_x {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&jmp X_DELETE_X>, <&jmp X_DELETE_W_X>;
-    };
-    td_delete_c: tap_dance_delete_c {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&jmp X_DELETE_C>, <&jmp X_DELETE_W_C>;
-    };
-    td_delete_v: tap_dance_delete_v {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&jmp X_DELETE_V>, <&jmp X_DELETE_W_V>;
-    };
-    td_delete_b: tap_dance_delete_b {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&jmp X_DELETE_B>, <&jmp X_DELETE_W_B>;
-    };
-    td_delete_sym2: tap_dance_delete_sym2 {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&jmp X_DELETE_SYM2>, <&jmp X_DELETE_W_SYM2>;
-    };
-    td_delete_sym1: tap_dance_delete_sym1 {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&jmp X_DELETE_SYM1>, <&jmp X_DELETE_W_SYM1>;
-    };
-    td_delete_num: tap_dance_delete_num {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&jmp X_DELETE_NUM>, <&jmp X_DELETE_W_NUM>;
-    };
-    td_delete_t_ll: tap_dance_delete_t_ll {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&jmp X_DELETE_T_LL>, <&jmp X_DELETE_W_T_LL>;
-    };
-    td_delete_t_lr: tap_dance_delete_t_lr {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&jmp X_DELETE_T_LR>, <&jmp X_DELETE_W_T_LR>;
-    };
   };
   keymap {
     compatible = "zmk,keymap";
@@ -860,11 +697,11 @@
     };
     DELETE_LAYER {
       bindings = <
-        &none           &none          &none             &none             &none            &none          &none                                                                       &none   &none   &none   &none   &none   &none   &none
-        &td_delete_qq   &td_delete_q   &td_delete_w      &td_delete_e      &td_delete_r     &td_delete_t   &none                                                                       &none   &none   &none   &none   &none   &none   &none
-        &td_delete_aa   &td_delete_a   &td_delete_s      &td_delete_d      &td_delete_f     &td_delete_g   &none                     &none             &none   &none   &none           &none   &none   &none   &none   &none   &none   &none
-        &td_delete_zz   &td_delete_z   &td_delete_x      &td_delete_c      &td_delete_v     &td_delete_b                                               &none   &none                           &none   &none   &none   &none   &none   &none
-        &none           &none          &td_delete_sym2   &td_delete_sym1   &td_delete_num                          &td_delete_t_ll   &td_delete_t_lr   &none   &none   &none   &none                   &none   &none   &none   &none   &none
+        &none              &none             &none                &none                &none               &none             &none                                                                             &none   &none   &none   &none   &none   &none   &none
+        &jmp X_DELETE_QQ   &jmp X_DELETE_Q   &jmp X_DELETE_W      &jmp X_DELETE_E      &jmp X_DELETE_R     &jmp X_DELETE_T   &none                                                                             &none   &none   &none   &none   &none   &none   &none
+        &jmp X_DELETE_AA   &jmp X_DELETE_A   &jmp X_DELETE_S      &jmp X_DELETE_D      &jmp X_DELETE_F     &jmp X_DELETE_G   &none                        &none                &none   &none   &none           &none   &none   &none   &none   &none   &none   &none
+        &jmp X_DELETE_ZZ   &jmp X_DELETE_Z   &jmp X_DELETE_X      &jmp X_DELETE_C      &jmp X_DELETE_V     &jmp X_DELETE_B                                                     &none   &none                           &none   &none   &none   &none   &none   &none
+        &none              &none             &jmp X_DELETE_SYM2   &jmp X_DELETE_SYM1   &jmp X_DELETE_NUM                             &jmp X_DELETE_T_LL   &jmp X_DELETE_T_LR   &none   &none   &none   &none                   &none   &none   &none   &none   &none
       >;
     };
     LEFT_ARROW_LAYER {
