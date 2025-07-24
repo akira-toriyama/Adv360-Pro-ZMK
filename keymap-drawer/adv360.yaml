@@ -1,20 +1,20 @@
 layout: {zmk_keyboard: adv360}
 layers:
   '0':
+  - {t: BT, h: '0'}
   - ''
   - ''
   - ''
   - ''
   - ''
-  - BT CLR
   - '&bootloader'
   - '&bootloader'
-  - BT CLR
   - ''
   - ''
   - ''
   - ''
   - ''
+  - {t: BT, h: '1'}
   - Gui+AltGr+Sft+Ctl+LANGUAGE 8
   - {t: Q, s: '&eiji_macro Q'}
   - {t: W, s: '&eiji_macro W'}
